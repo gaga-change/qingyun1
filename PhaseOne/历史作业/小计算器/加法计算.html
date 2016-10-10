@@ -1,0 +1,59 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>计算器</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+
+</head>
+	<script src="calculator.js"></script>
+<body>
+	<h1 align="center">计算器</h1>
+	<div id="calculator">
+		<!-- 第一行的 数字一 -->
+		<div class="num1_all">
+			<span class="sym" onclick="del('num1_id')">--</span>
+			<input id="num1_id" type="digital">
+			<span class="sym" onclick="add('num1_id')">++</span>
+		</div>
+
+		<!-- 选择后的算术符号 -->
+		<div class="symbol1">
+			<span class="sym" id="sym_id" ></span>
+		</div>
+
+		<!-- 第三行的 数字二 -->
+		<div class="num2_all">
+			<span class="sym" onclick="del('num2_id')">--</span>
+			<input id="num2_id" type="digital">
+			<span class="sym" onclick="add('num2_id')">++</span>
+		</div>
+
+		<!-- 第四行的 等于号按钮 -->
+		<div class="submit">
+			<!-- <input class="sym"  type="button" value="=" > -->
+			<span class="sym" onclick="sum()">=</span>
+		</div>
+
+		<!-- 第五行的 输出结果 -->
+		<div class="result">
+			<input id="sum_id" type="digital">
+		</div>
+
+		<!-- 第六行的 4个符号 -->
+		<div class="symbol_all">
+			<span class="sym" onclick="changeSymbol(this)" >+</span>
+			<span class="sym" onclick="changeSymbol(this)" >-</span>
+			<span class="sym" onclick="changeSymbol(this)">*</span>
+			<span class="sym" onclick="changeSymbol(this)">/</span>
+		</div>
+
+		<!-- 第七行的 比大小 -->
+		<div class="is_big">
+			<input id="is_big_id" type="text">
+		</div>
+	</div>
+
+
+</body>
+
+</html>

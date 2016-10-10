@@ -1,0 +1,28 @@
+#header,#wrapper,footer{
+    width: 950px;
+    margin: 30px auto;
+
+    -webkit-transition: width 1s ease,borderx-show 3s ease,border 1s ease;
+    -moz-transition: width 1s ease,box-show 3s ease,border 1s ease;
+    -o-transition: width 1s ease,box-show 3s ease,border 1s ease;
+    -ms-transition: width 2s ease,box-show 3s ease,border 1s ease;
+    transition: width 1s ease,box-show 3s ease,border 1s ease;
+
+}
+#header{
+    line-height: 70px;
+}
+#wrapper{
+    overflow: hidden;
+}
+#section{
+    float:left;
+}
+#aside{
+    float: right;;
+   width: 310px;
+}
+#footer{
+    border-top:1px dotted darkgray;
+    text-align: center;
+}

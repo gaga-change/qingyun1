@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>计时器</title>
+	<style type="text/css">
+		*{margin:0px;padding:0px;}
+		body{font: 14px Helvetica,Arial,sans-serif;font-size: 14px;color:#333;}
+		input{outline:none;border:none;font-size:100%;  }
+
+		#wrapper{
+			width: 500px;
+			margin: 20px auto;
+			padding-top: 20px;
+			text-align: center;
+			line-height: 50px;
+			background-color: Aliceblue;
+		}
+		#wrapper .show_time_boxs{
+			/*background-color: red;*/
+
+		}
+		.show_time_boxs span{
+			width: 80px;
+			height: 40px;
+			margin-right: 10px;
+			margin-left: 10px;
+			display: inline-block;
+			background-color: aqua;
+			vertical-align: middle;
+			line-height: 40px;
+		}
+		div.all_button{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.all_button input{
+			width: 50px;
+			height: 30px;
+			margin-left: 10px;
+			margin-right: 10px;
+			font-size: 12px;
+			border: 1px solid #c3c8cd;
+			border-radius: 3px;
+			box-shadow: 2px 2px 5px #888888;
+		}
+		.all_button input:hover{
+			border-radius: 0px;
+			outline: 1px solid gray;
+			background-color: aqua;
+			color: MidnightBlue ;
+
+		}
+		/*------表格------*/
+		#wrapper .show_message table{
+			line-height: 30px;
+			width: 500px;
+			border-collapse: collapse;
+		}
+		.show_message th{
+			background-color:YellowGreen; 
+		}
+		.show_message td{
+			background-color: Thistle;
+			word-break:break-all;
+		}
+		th,td{
+			text-align: left;
+			padding-left: 10px;
+			/*width: 140px;*/
+		}
+		.show_message tr th:first-child+th
+		{
+			background-color: Violet  ;
+		}
+		.show_message tr td:first-child+td
+		{
+			background-color: Silver ;
+		}
+		.show_message table input{
+			border-radius: 2px;
+			background-color: Thistle;
+			padding: 1px 4px;
+			/*margin-top: 1px;*/
+			vertical-align: middle;
+		}
+		.show_message table input:hover{
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>计时器</h1>
+		<div class="show_time_boxs"><span id="hour">0</span>:<span id="minute">0</span>:<span id="second">0</span>:<span id="millisecond">0</span ></div>
+		<div class="all_button">
+			<input id="start_button" type="button" onclick="startTool()"  value="开始">
+			<input id="add_button" type="button" onclick="addTool()" value="添加">
+			<input id="pause_button" type="button" onclick="pauseTool(this)" value="暂停">
+			<input id="reset_button" type="button" onclick="resetTool()" value="重置">
+		</div>
+		<div class="show_message">
+			<table id="my_table" >
+				<tr>
+					<th width="150px">#</th>
+					<th >时间</th> 	
+					<th width="150px">操作</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	myDate=new Date();
+	MS=0; //计时的毫秒数
+	NUM=0; //当前添加的记录数
+	MID_MS=0; //暂停时所维持的毫秒数
+	PAS_DATE=new Date();
+
+	COLOR_NUM=1;
+	COLOR_NUM_ADD=1
+	COLOR_DEL=0;
+	var noless;
+	startButton=document.getElementById("start_button");
+	startButton.disabled=false;
+	addButton=document.getElementById("add_button");
+	addButton.disabled=true;
+	pauseButton=document.getElementById("pause_button");
+	pauseButton.disabled=true;
+	resetButton=document.getElementById("reset_button");
+	resetButton.disabled=true;
+	hour=document.getElementById("hour");
+	minute=document.getElementById("minute");
+	second=document.getElementById("second");
+	millisecond=document.getElementById("millisecond");
+	function startTool(){	
+		startButton.disabled=true;
+		addButton.disabled=false;
+		pauseButton.disabled=false;
+		resetButton.disabled=false;
+		myDate=new Date();
+		//4个显示框开始运作
+		startTime(myDate.getTime(),MID_MS);
+		
+	}
+	function startTime(oldTmie,middleTmie){
+		noless=setInterval(function(){
+			console.log("qidong");
+			var nowTime=new Date();
+			MS=nowTime.getTime()-oldTmie-middleTmie;
+			hour.innerHTML=parseInt(MS/3600000)%60;
+			minute.innerHTML=parseInt(MS/60000)%60;
+			second.innerHTML=parseInt(MS/1000)%60;
+			millisecond.innerHTML=MS%1000;
+			document.getElementById("wrapper").style.backgroundColor="rgb(100,160,"+(0+COLOR_NUM)+")";
+			COLOR_DEL+=1;
+			if(COLOR_DEL==6){
+				COLOR_DEL=1;
+				COLOR_NUM+=COLOR_NUM_ADD;
+				// console.log(COLOR_NUM);
+				if (COLOR_NUM==250||COLOR_NUM==1) {
+					COLOR_NUM_ADD=-COLOR_NUM_ADD;
+				}
+			}
+
+		},1);
+	}
+	function addTool(){
+		// console.log("fdsa");
+		//提取四个显示框的数字并整合成一个数字
+		var innerText=parseInt(MS/3600000)%60+"."+parseInt(MS/60000)%60+"."+parseInt(MS/1000)%60+"."+MS%1000;
+		console.log(innerText);
+		//给表格添加一个新信息
+		NUM++;
+		innerText="<td>"+NUM+"</td><td>"+innerText+"</td><td><input type='button' onclick='delTr(this)' value='删除'></td>";
+		var newTr=document.createElement("tr");
+		newTr.innerHTML=innerText;
+		var myTable=document.getElementById("my_table");
+		myTable.appendChild(newTr);
+	}
+	function pauseTool(id){
+		// 判断当前为恢复还是暂停,是暂停则
+		if(id.value=="暂停"){
+
+			//停止时间的跳动
+			clearInterval(noless);
+			console.log("qichu");
+
+			// 得到暂停时的时间
+			PAS_DATE=new Date();
+
+			//停止添加按钮的点击
+			startButton.disabled=true;
+			addButton.disabled=true;
+
+			//把名字改为恢复
+			id.value="恢复";
+			return;
+		}
+		//如果按钮名字为恢复则恢复时间,把名字改为暂停
+		id.value="暂停";
+		var newDate=new Date();
+		MID_MS+=newDate.getTime()-PAS_DATE.getTime();
+		startTime(myDate.getTime(),MID_MS);
+		//恢复添加按钮的点击
+		// startButton.disabled=false;
+		addButton.disabled=false;
+	}
+	function resetTool(){
+		clearInterval(noless);
+		console.log("qichu");
+
+		// 清空表格中的数据
+		startButton.disabled=false;
+		addButton.disabled=true;
+		pauseButton.disabled=true;
+		resetButton.disabled=true;
+		pauseButton.value="暂停";
+		MS=0;
+		NUM=0;
+		MID_MS=0;
+		var myTable=document.getElementById("my_table");
+		var trs=myTable.getElementsByTagName("tr");
+		var trsLength=trs.length;
+		for(var i=1;i<trsLength;i++){
+			// console.log(trs[i]);
+			myTable.removeChild(trs[1]);
+		}
+		// 把时间显示置0
+		hour.innerHTML=0;
+		minute.innerHTML=0;
+		second.innerHTML=0;
+		millisecond.innerHTML=0;
+		
+
+	}
+	function delTr(id){
+		id.parentNode.parentNode.remove();
+	}
+
+
+
+
+
+
+</script>
+</html>

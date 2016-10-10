@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../package/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../package/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="../package/dong.对象的复习"></script>-->
+    <title>title</title>
+    <style type="text/css">
+        #myCarousel{
+            width: 647px;
+        }
+        li.active{
+           background-color: rgba(0,0,0,0)!important;
+            border: none;
+            background-image: url("../img/icons.png");
+            background-position: -855px -727px;
+            width: 20px!important;
+            height: 20px!important;
+            position: relative;
+            top: 3px;
+        }
+        ol li{
+            width: 11px!important;
+            height:11px!important;
+        }
+        li{
+            background-color: #ffffff!important;
+
+        }
+        .carousel-indicators{
+            left: 80%;
+            right: 0;
+        }
+        #myCarousel .left{
+            height: 30px;
+            top: 50%;
+            visibility: hidden;
+        }
+        #myCarousel .left:hover{
+            /*display: block;*/
+            visibility: visible;
+        }
+        #myCarousel .right{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="myCarousel" class="carousel slide ">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="../img/diao.png" alt="">
+        </div>
+        <div class="item">
+            <img src="../img/diao.png" alt="">
+        </div>
+        <div class="item">
+            <img src="../img/diao.png" alt="">
+        </div>
+    </div>
+    <a class="carousel-control left" href="">
+        fdsa
+    </a>
+    <a class="carousel-control right" href="">
+        fdas
+    </a>
+</div>
+</body>
+<script type="text/javascript">
+
+</script>
+</html>

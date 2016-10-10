@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>自写reduce</title>
+</head>
+<body>
+<script type="text/javascript">
+	// Array.prototype.myReduce=function(myFunction){
+	// 	var num1;
+	// 	num1=this[0];
+	// 	for (var i = 1 ; i < this.length ; i++) {
+	// 		num1=myFunction(num1,this[i]);
+	// 		// console.log(this[i]);
+	// 	};
+	// 	return num1;
+	// }
+	// var arr=new Array(1,2,3,4);
+	// // var arr=new Array("1",2,3,4);
+
+	// // console.log(arr.reduce(function(a,b){
+	// // 	return a+b;
+	// // }));
+	// console.log(arr.myReduce(function(a,b){
+	// 	return a+b;
+	// }));
+	
+	var temp=function(a,b){
+		console.log("---a:"+a+"---b:"+b);
+		if(a==="1"){
+			a=0;
+		}
+		a++;
+		return a;
+	}
+	var arr=new Array("1",2,32);
+	arr.reduce(temp);
+	// console.log(arr);
+	console.log("-----------");
+	// console.log(arr.reduce(temp));
+	// console.log(arr);
+
+
+
+</script>
+</body>
+</html>

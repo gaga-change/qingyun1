@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>选做题参考方法之一</title>
+	<style type="text/css">
+		div>div{
+			position: relative;
+		}
+		div>div span{
+			font-size: 10px;
+			visibility: hidden;
+			position: absolute;
+			right: -200px;
+			top: 0px;
+		}
+		img.star:hover,
+		img.star:hover+img,
+		img.star:hover+img+img,
+		img.star:hover+img+img+img,
+		img.star:hover+img+img+img+img{
+			/*background-image: url(../img/star_after.png);*/星星路径
+			background-color: black
+		}
+		img.star:hover+span{
+			visibility: visible;
+			background-color: yellow;
+		}
+}
+	</style>
+</head>
+<body>
+	<div>
+		<span>评价:</span>
+		<div>
+			<img class="star " src="img/star_start.png">
+			<span>很差</span>
+			<img class="star" src="img/star_start.png">
+			<span>较差</span>
+			<img class="star" src="img/star_start.png">
+			<span>还行</span>
+			<img class="star" src="img/star_start.png">
+			<span>推荐</span>
+			<img class="star" src="img/star_start.png">
+			<span>力推</span>
+	</div>
+</div>
+</body>
+</html>

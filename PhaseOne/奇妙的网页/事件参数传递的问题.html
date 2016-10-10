@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<input type="button" value="点我1" onclick="(function show(){console.log('哈哈')})();">
+	<input type="button" value="点我2" onclick="change(event)">
+	<input type="button" value="点我3" >
+	<input type="button" value="点我4" >
+
+</body>
+<script type="text/javascript">
+	function change(){
+		for (var i = arguments.length - 1; i >= 0; i--) {
+			console.log(arguments[i]);
+		};
+	}
+	var but3=document.querySelectorAll("input")[2];
+	but3.onclick=function(){
+		console.log("but3");
+	}
+	// var change4;
+	// var but4=document.querySelectorAll("input")[3];
+	// but4.addEventListener("click",function(num){
+	// 	change4=function(){
+	// 		console.log(num);
+	// 	}
+	// 	return change4;
+	// }(100),false);
+	var change4;
+	function show(a){
+
+		return(change4=function(event){
+			console.log(a);
+		});
+	}
+	var but4=document.querySelectorAll("input")[3];
+	// but4.addEventListener("click",show(10),false);
+	but4.addEventListener("click",function (num){
+		return change4=function(event){
+			console.log(num)
+		};
+	}(10),false);
+
+	// but4.removeEventListener("click",change4);
+</script>
+</html>

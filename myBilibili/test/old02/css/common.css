@@ -1,0 +1,126 @@
+
+div.container {
+    width: 100%;
+}
+h1, h2, h3, h4, h5 {
+    display: inline-block;
+}
+.wrapper .right {
+    width: 260px;
+}
+#wrapper > .row {
+    margin-bottom: 20px;
+}
+div.m-item {
+    width: 160px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: greenyellow;
+    float: left;
+}
+/*响应式*/
+@media screen and (max-width: 1400px) {
+    .change_size {
+        width: 980px;
+    }
+    .container {
+        min-width: 980px;
+    }
+    a {
+        color: #031305 !important;
+    }
+    .change_in_720 {
+        width: 520px;
+        overflow: hidden;
+        height: 220px;
+    }
+    .change_in_900 {
+        width: 700px;
+        overflow: hidden;
+        /*height:220px;*/
+    }
+}
+@media screen and (min-width: 1400px) {
+    .change_size {
+        width: 1160px;
+    }
+    a {
+        color: #680000 !important;
+    }
+    .change_in_720 {
+        width: 700px;
+        overflow: hidden;
+        height: 220px;
+    }
+    .change_in_900 {
+        width: 880px;
+        overflow: hidden;
+        /*height:220px;*/
+    }
+}
+/*项目条之m-item*/
+.m-item{
+    width: 160px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+
+}
+.m-item:hover .info{
+    top: 0;
+    background-color: rgba(128,128,128,0.8);
+    color: white;
+}
+.m-item img{
+
+}
+.m-item .info{
+    position: absolute;
+    top:75px;
+    left:0;
+    padding: 6px;
+    height: 100px;
+    overflow: hidden;
+    color: white;
+    transition:top 1s,background 1s ;
+}
+.m-item .t{
+    height: 44px;
+    /*padding-top: 6px;*/
+
+}
+.m-item .up,.m-item .play{
+    margin: 4px;
+    color: #d2d2d2;
+}
+.push-item{
+    position: relative;
+    width:160px;
+    height:148px;
+}
+.push-item a:hover .time{
+    display: inline-block;
+}
+.push-item .time{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: auto;
+    height: 20px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px 6px ;
+    color: white;
+    background-color: rgba(60,60,60,0.6);
+}
+.push-item .title{
+    font-size: 20px;
+}
+.in_push_one li{
+    float: left;
+    margin-right: 20px;
+}
+

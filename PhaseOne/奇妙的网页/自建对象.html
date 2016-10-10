@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>自己建立对象的两种方式</title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		// var person=new Object(); 
+		// person.name="jundong";
+		// person.age=21;
+
+		// var person={name:"jundong",age:22};
+
+		function person (name ,age){
+			this.name=name;
+			this.age=age;
+			this.setAge=setAge;
+			function setAge(age){
+				this.age=age;
+			}
+		}
+		var haha= new person("1",1);
+
+		haha.setAge(10);
+		for(var x in haha){
+			console.log(haha[x]);
+		}
+
+	</script>
+
+
+</body>
+</html>

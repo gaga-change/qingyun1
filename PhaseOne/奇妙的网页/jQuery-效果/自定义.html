@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-3.1.0.min.js"></script>
+	<title>title</title>
+	<style type="text/css">
+		p{
+			display: none;
+			background-color: red;
+			height: 100px;
+		}	
+	</style>
+</head>
+<body>
+	<input id="but1" type="button" value="自定义">
+	<input id="but2" type="button" value="隐藏">
+	<input id="but3" type="button" value="显示|隐藏">
+	<p>Hello</p>
+	<div>Hello2</div>
+	<div>Hello3</div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#but1").click(function(){
+			// $("p").animate({width:"90%",height:"100%",fontSize:"10em",borderWidth:10},"slow");
+			// $("p").animate({backgroundColor:"#222222"},"slow");
+			$('p').slideUp(300).delay(800).fadeIn(400);
+			// $("p").fadeOut(400);
+		});
+		$("#but2").click(function(){
+			// $("p").hide();
+			$('p').slideDown(300);
+		});
+		$("#but3").click(function(){
+			$('p').slideUp(300);
+			// console.log("haha2");
+			// $("p").toggle("slow");
+		});
+	});
+	
+	
+</script>
+</html>

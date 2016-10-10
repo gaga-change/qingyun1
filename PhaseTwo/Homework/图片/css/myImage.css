@@ -1,0 +1,21 @@
+/*图标区域*/
+.content{
+    min-width: 900px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom:30px;
+    /*overflow: scroll;*/
+}
+.content img{
+    cursor: pointer;
+    transition: border-radius 1s linear,box-shadow 1s linear,transform 1s linear ;
+
+}
+.content >div{
+    width: 200px;
+    height:300px;
+    float: left;
+    margin: 20px;
+    transition:transform 1s linear;
+}
+

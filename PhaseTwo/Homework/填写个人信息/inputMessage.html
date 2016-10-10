@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>填写信息</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/message.css">
+    <script type="text/javascript" src="package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/message.js"></script>
+</head>
+<body>
+<div id="body">
+    <header id="header">
+        <h2>个人信息填写</h2>
+    </header>
+    <nav>
+        <ul class="nav_menu">
+            <li><a title="0">基本信息</a></li>
+            <li><a title="1">学历</a></li>
+            <li><a title="2">附加</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <section>
+            <article>
+                <div id="scroll">
+                    <div id="base">
+                        <ul>
+                            <li>
+                                <span>用户名</span><em></em><input type="text" placeholder="用户名"/>
+                            </li>
+                            <li>
+                                <span>性 别</span><em></em><label ><input id="sex1" type="radio" name="sex" />男</label><label><input id="sex2" type="radio" name="sex" />女</label>
+                            </li>
+                            <li>
+                                <span>身份证号</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>身 高</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>体 重</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>联系方式</span><em></em><input type="text">
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div id="school">
+                        <ul>
+                            <li>
+                                <span>就读/毕业 小学</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>就读/毕业 初中</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>就读/毕业 高中</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>就读/毕业 大学</span><em></em><input type="text">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="else">
+                        <ul>
+                            <li>
+                                <span>名 族</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>所在地</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>婚姻状况</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>政治面貌</span><em></em><input type="text">
+                            </li>
+                            <li>
+                                <span>个人名言</span><em></em><textarea name="" id="" cols="30" rows="10"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <aside id="aside">
+            <h1>您的选择</h1>
+            <p><input id="submit" type="button" value="提交"></p>
+            <p><input id="reset" type="reset" value="重置"></p>
+        </aside>
+    </div>
+    <footer id="footer">
+        <p>严俊东</p>
+    </footer>
+</div>
+</body>
+</html>
+

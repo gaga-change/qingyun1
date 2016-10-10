@@ -1,0 +1,21 @@
+*{margin: 0;padding: 0}
+body{
+    font: 14px "翩翩体-简",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color:#333;
+}
+input{
+	outline: none;
+	border:none;
+	font-size: 100%;
+}
+ul{
+	list-style-type: none;
+	overflow: hidden;
+}
+li{
+	/*float: left;*/
+}
+a{
+	cursor: pointer;
+}

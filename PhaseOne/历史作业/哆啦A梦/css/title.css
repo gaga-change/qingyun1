@@ -1,0 +1,124 @@
+*{margin: 0;padding: 0}
+body{font: 16px Helvetica,Arial,sans-serif;font-size: 16px;color:#333;}
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color: SeaGreen  ;
+}
+input{outline: none;border: none;vertical-align: middle;}
+ul{list-style-type: none;}
+
+/*------页眉------*/
+#header{
+	width: 100%;
+	height: 140px;
+	background: rgb(236,240,243);
+	min-width: 950px;
+}
+/*页眉高级菜单*/
+#header .top{
+	padding-right: 12px;
+	font-size: 12px;
+	height: 28px;
+	background-color: DimGray ; 
+	line-height: 28px;
+}
+/*两个ul*/
+#header .top ul{
+	
+}
+/*所有li*/
+#header .top ul li{
+	display: inline;
+	float: left;
+}
+/*li的鼠标接触事件*/
+#header .top  ul li:hover{
+	background-color:black; 
+}
+/*右边的菜单*/
+#header .top ul + ul {
+	float: right;
+}
+
+#header .top a{
+	display: block;
+	color: Chartreuse ;
+	padding-left: 12px;
+	padding-right: 12px;
+
+}
+/*页眉电影搜索*/
+#header .middle{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	height: 57px;
+	background-color: rgb(236,240,243);
+	width: 950px;
+	margin: 0 auto 0 auto;
+	line-height: 50px;
+}
+#header .middle img{
+	vertical-align: middle;
+	cursor: pointer;
+}
+/*搜索输入框*/
+#header .middle  img + input{
+	width: 460px;
+	height: 31px;
+	margin-left: 60px;
+	padding-left: 16px;
+	/*border:1px solid #c3c8cd; */
+	border-right: none;
+	box-shadow: 0 2px 3px #ccc;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+/*搜索按钮*/
+#header [type="button"]{
+	vertical-align: middle;
+	border-style: none;
+	overflow: hidden;
+	width: 37px;
+	height: 35px;
+	cursor:pointer;
+	background: url(../img/sou.png) no-repeat 0 -38px;
+	/*background-color: red;*/
+
+}
+/*页眉电影菜单*/
+#header .bottom{
+	margin:0 auto 0;
+	width: 950px;
+	font-size: 13px;
+	height: 40px;
+	line-height: 40px;
+	background-color: orange;
+
+}
+#header .bottom ul{
+	float: left;
+}
+#header .bottom li{
+	float: left;
+}
+#header .bottom a{
+	display: block;
+	margin-right:20px;
+	margin-left: 20px;
+	color:Indigo   ;
+}
+#header .bottom a:hover {
+	font-size: 2em;
+}
+
+/*------版权声明------*/
+#footer{
+	margin: 30px auto;
+	padding-top: 10px;
+	border-top: 1px dotted gray;
+	text-align: center;
+	width: 950px;
+	font-size: 12px;
+	color: gray;
+	font-family: STKaiti;
+}

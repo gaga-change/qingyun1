@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>数组方法测试</title>
+</head>
+<body>
+<script type="text/javascript">
+var iNum1 = parseInt("10", 2);	//返回 2
+var iNum2 = parseInt("10", 8);	//返回 8
+var iNum3 = parseInt("10", 10);	//返回 10
+iNum1="0x12";
+console.log(Number(iNum1));  //18
+console.log(parseInt(iNum1));  //18
+console.log(parseInt(iNum1,2));  //0
+console.log(parseInt(iNum1,10)); //0
+console.log(parseInt(iNum1,16)); //18
+console.log("-----------------");
+iNum1=0x12;
+iNum1=18;
+console.log(Number(iNum1));    //18
+console.log(parseInt(iNum1));    //18
+console.log(parseInt(iNum1,2));  //1
+console.log(parseInt(iNum1,10)); //18
+console.log(parseInt(iNum1,16)); //24
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style type="text/css">
+		#all_menu{
+			list-style-type: none;
+			float: left;
+		}
+		#all_menu li:hover{
+			background-color: Seagreen;
+		}
+		#all_menu li:hover > ul{
+			visibility: visible;
+		}
+		#all_menu>li{
+			position: relative;
+			float: left;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-right: 20px;	
+			background-color: red;
+		}
+		/*第二级*/
+		#all_menu ul{
+			width: 100px;
+			position: absolute;
+			left: -40px;
+			top: 20px;
+			visibility:hidden;
+			list-style-type: none;
+		}
+		#all_menu ul li{
+			text-align: center;
+			background-color: Deeppink;
+		}
+	</style>
+</head>
+<body>
+	<ul id="all_menu">
+		<li class="j">金
+			<ul>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+			</ul>
+		</li>
+		<li class="m" >木
+			<ul>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+			</ul>
+		</li>
+		<li class="s">水
+			<ul>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+			</ul>
+		</li>
+		<li class="h">火
+			<ul>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+				<li>哈哈</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

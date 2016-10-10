@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="package/dong.js"></script>
+    <title>title</title>
+    <style type="text/css">
+        body{
+            margin:12px;
+        }
+        .a{
+            width:200px;
+            height: 200px;
+            background-color: #43ff34;
+            overflow: hidden;
+        }
+        .b{
+            width:100px;
+            height: 100px;
+            margin:20px;
+            background-color: #aeff3f;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b"></div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    var temp=$(".a").position();
+    console.log(temp.left);
+    console.log(temp.top);
+    temp=$(".b").position();
+    console.log(temp.left);
+    console.log(temp.top);
+</script>
+</html>

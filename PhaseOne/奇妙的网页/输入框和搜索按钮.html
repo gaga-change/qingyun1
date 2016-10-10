@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{margin: 0;padding: 0}
+		body{
+		    font: 14px Helvetica,Arial,sans-serif;font-size: 14px;
+		    color:#333;
+		}
+		input,select,textarea,button{
+		    outline:none;  
+		}
+		img,input,button,select{
+		    border:none;
+		    vertical-align:middle;    
+		}
+		h1,h2,h3,h4,h5,h6,input,button{
+		    font-size:100%;    
+		}
+		#search{
+			height: 40px;
+			width: 500px;
+			margin:20px auto;
+			padding:10px 10px;	
+			/*background-color: red;*/
+		}
+
+		#search input:first-child{
+			height: 38px;
+			width: 420px;
+			padding-left: 16px;
+			border:1px solid #c3c8cd; 
+			border-right: none;
+			box-shadow: 0 2px 3px #ccc;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		#search input+input{
+			height: 100%;
+			width: 50px;
+			background-color: #638eae;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			box-shadow: 0 2px 3px #ccc;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="search">
+		<input type="text"><input type="button" value="搜索">
+
+	</div>
+</body>
+</html>

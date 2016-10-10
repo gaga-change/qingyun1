@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery的认识</title>
+    
+    <script type="text/javascript" src="jquery-3.1.0.slim.min.js"></script>
+     <script type="text/javascript">
+     	$(document).ready(function () {
+     		// $("button").click(function(){
+     		// 	$("p").hide();
+     		// });
+     		// $("h2:first-child").css("color","red");
+     		// console.log(jQuery);
+     		// console.log($);
+     		// alert($);
+
+     		var temp=$("h2");
+     		var h2=document.querySelector("h2");
+     		console.log($(h2)==temp);
+     		console.log($(h2)[0]==temp[0]);
+
+     	});
+
+     </script>
+</head>
+<body>
+<!-- <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-3.1.0.min.js"></script> -->
+<h2>哈哈</h2>
+<p>O(∩_∩)O哈哈~</p>
+<p>嘿嘿</p>
+<button type="button">click me </button>
+</body>
+</html>
+
+

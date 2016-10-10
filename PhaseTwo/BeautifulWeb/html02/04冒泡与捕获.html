@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../package/dong.js"></script>
+    <title>title</title>
+    <style type="text/css">
+        #c {
+            display: block;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top:30px;
+
+        }
+
+        div {
+            padding: 30px 30px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+<div id="a" style="background-color: #505050">
+    a
+    <div id="b" style="background-color: yellow">
+        b
+        <a href="01Storage1.html" id="c" style="background-color: green">
+            c
+        </a>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+    $("#c").on("click", function (ele) {
+        con("c")
+        ele.preventDefault();
+    })
+    $("#b").on("click", function (ele) {
+        con("b")
+    })
+    $("#a").on("click", function (ele) {
+        con("a")
+    })
+    $(document).on("click", function (ele) {
+        con("document")
+
+    })
+    $(window).on("click", function (ele) {
+        con("window")
+        console.log("------------");
+    })
+
+</script>
+</html>

@@ -1,0 +1,125 @@
+*{padding:0;margin:0;}
+body{font-family: "娃娃体-简","STKaiti";font-size: 16px;}
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color: SeaGreen  ;
+}
+/*总体*/
+#collection{
+	margin: 30px auto;
+	position: relative;
+	width: 950px;
+	height: 550px;
+	/*background-color: aliceblue;*/
+}
+/*豆瓣标志*/
+#top a{
+	float: left;
+	width: 100%;
+	height: 30px;
+	/*background-color: pink;*/
+	background-image:url(../img/index.png); 
+	background-repeat: no-repeat;
+}
+/*"登入豆瓣"标题*/
+#content h1{
+	display: block;
+	margin-top: 15px;	
+}
+#content{clear: both;}
+/*注册和下载应用链接*/
+div.right{
+	position: absolute;
+	right: 80px;
+	top:150px;
+}
+/*左边输入框集合*/
+#content .left{
+	width: 300px;
+	height: 360px;
+	margin-top: 20px;
+	margin-left: 40px;
+	/*background-color: aqua;*/
+	position: relative;
+	line-height: 250%;
+}
+/*手机验证码登录*/
+.left>a:first-child{
+	font-size: 14px;
+	position: relative;
+	left: 150px;
+	top: 12px;
+}
+/*账号和密码提示*/
+	.left p>span{
+	margin-right: 20px;
+}
+/*账号密码输入框*/
+input[type="text"],input[type="password"]{
+	width: 200px;
+	height: 24px;
+	font-size: 11px;
+	color: gray;
+}
+/*下次自动登录 忘记密码*/
+.left p+p+p{
+	margin-top: 10px;
+	font-size: 14px;
+	text-align: center;	
+}
+/*登录按钮*/
+.left>input{
+	display: block;
+	background-color: Aquamarine ;
+	font-size: 1em;
+	padding: 5px 20px ;
+	position: relative;
+	left: 60px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border:2px outset CadetBlue ;
+
+}
+.left>input:hover{
+	background-color: Aqua;
+	color: #990033;
+}
+.left>input:active{
+	border-style: inset;
+	border-color: red;
+	background-color: CornflowerBlue;
+}
+/*第三方登录*/
+#content .login_else{
+	border-top:1px dotted gray;
+	border-bottom:1px dotted gray;
+	width: 200px;	
+	font-size: 14px;
+	text-align: left;
+	padding: 0;
+	line-height: 200%;
+	font-size: 14px;
+	position: relative;
+	left: 60px;
+}
+/*第三方登录的三个图标*/
+.login_else img{
+	vertical-align: middle;
+}
+.class{
+	background-color: beige;
+}
+/*页脚*/
+#bottom{ 
+	font-size: 14px;
+	text-align: center;
+	border-top: 2px dotted gray;
+	position: absolute;
+	bottom: 0px;
+    width: 100%;
+	height: 20px;
+	color: gray;
+	
+	/*background-color: aqua;*/
+}

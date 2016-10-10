@@ -1,0 +1,94 @@
+body{
+    /*font-family: STKaiti;*/
+    font-family: "翩翩体-简";
+    /*font-size: 25px;*/
+}
+small{
+    font-size: 100%;
+    color: #bababa;
+    /*font-size: 20px;*/
+}
+p small{
+    font-size: 20px;
+    color: #a7a7a7;
+}
+.footer{
+    margin-bottom: 300px;
+}
+/*--------------头部-------------*/
+.header >.row:first-child{
+    padding: 0 100px;
+}
+.header >.row:first-child .col-xs-7,.header >.row:first-child .col-xs-7+.col-xs-2{
+    /*line-height: 70px;*/
+    position: relative;
+    top: 20px;
+}
+.header >.row:first-child ul{
+    padding-left: 0px;
+
+}
+.header h1{
+    font-weight: 400;
+    color: #6a686c;
+}
+
+.header >.row:first-child button{
+    border-radius:17px ;
+    padding-left:25px;
+    padding-right:25px;
+    background-color: #AED139;
+    border: none;
+}
+.header li{
+    text-transform: uppercase;
+    /*line-height: 70px;*/
+}
+/*----------------内容-----------*/
+.container{
+    width: 1300px;
+}
+#myTab a{
+    width: 324px;
+    font-size: 200%;
+}
+#myTab .one,#myTab .two,#myTab .three{
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    text-align: center;
+    display: inline-block;
+    background-color: #8c8887;
+    color: white;
+    /*font-size: 200%;*/
+    margin-right: 20px;
+}
+
+
+
+.header .row:last-child button {
+    /*background-image: url("../img/mag_02.jpg");*/
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 40px;
+    left: 50%;
+    top: 50%;
+    padding: 20px 40px;
+    border-radius:15px;
+    background-color: #AED139;
+    border: none;
+}
+.wrapper{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.wrapper>.row{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+}
+.wrapper .all_screen{
+    width: 100%;
+}

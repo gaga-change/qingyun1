@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>如何暂停世界</title>
+</head>
+<body>
+<input type="button" onclick="clear()">
+<script type="text/javascript">
+	console.log="开始";
+	var t=setTimeout(function() {
+		console.log("a");
+	},3000);
+	function clear(){
+		clearTimeout(t);
+	}
+
+</script>
+</body>
+</html>

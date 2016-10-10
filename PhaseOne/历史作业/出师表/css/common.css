@@ -1,0 +1,11 @@
+*{margin: 0;padding: 0}
+body{
+    font: 14px Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color:#333;
+}
+input{
+	outline: none;
+	border:none;
+	font-size: 100%;
+}

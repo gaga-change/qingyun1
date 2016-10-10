@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>显示大图</title>
+	<link rel="stylesheet" type="text/css" href="css/title.css">
+	<link rel="stylesheet" type="text/css" href="css/big_img.css">
+</head>
+<body>
+	<div id="header">
+		<div class="top">
+			<ul>
+				<li><a href="">豆瓣</a></li>
+				<li><a href="">读书</a></li>
+				<li><a href="">电影</a></li>
+				<li><a href="">音乐</a></li>
+				<li><a href="">同城</a></li>
+				<li><a href="">小组</a></li>
+				<li><a href="">阅读</a></li>
+				<li><a href="">FM</a></li>
+				<li><a href="">东西</a></li>
+				<li><a href="">集市</a></li>
+				<li><a href="">更多</a></li>
+			</ul>
+			<ul>
+				<li><a href="">下载豆瓣客户端</a></li>
+				<li><a href="登入豆瓣.html">登入</a></li>
+				<li><a href="">注册</a></li>
+			</ul>
+		</div>
+		<div class="middle">
+			<img src="img/lg_movie_a12_2.png" />
+			<input type="text" /><input type="button" />
+		</div>
+		<div class="bottom">
+			<ul>
+				<li><a href="">影讯&购票</a></li>
+				<li><a href="">选电影</a></li>
+				<li><a href="">电视机</a></li>
+				<li><a href="">排行榜</a></li>
+				<li><a href="">分类</a></li>
+				<li><a href="">影评</a></li>
+				<li><a href="">2015年度榜单</a></li>
+				<li><a href="">豆瓣观影报告</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<h1>哆啦A梦：新·大雄的日本诞生 的海报</h1>
+		<div class="left">
+			<div class="up_down_page">
+				<span>第 <em id="em_now_num">1</em> 张/共 <em id="em_all_num">19</em> 张</span>
+				<span><a  onclick="up()">上一张</a>/<a  onclick="down()">下一张</a></span>
+				<span>&gt <a href="">浏览所有海报</a></span>	
+			</div>
+			<div class="show_img">
+				<img id="show_img_id" src="movie_img/p1.jpg">
+			</div>
+			<div class="show_del_button">
+				<p>
+					<input style="margin-right:10px;" onclick="delButton()" type="button" value="删除"><input style="margin-left:10px;"  onclick="returnButton()" type="button" value="返回">
+				</p>
+			</div>
+		</div>
+		<div class="right">
+			<p>&gt<a href="">全部图片</a></p>
+			<ul>
+				<li><a href="">剧照(0)</a></li>
+				<li><a id="show_num_a" href="">海报(19)</a></li>
+				<li><a href="">壁纸(0)</a></li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<div id="footer">
+		<span>版权所有 严俊东</span>
+	</div>
+</body>
+<script src="js/global.js"></script>
+<script src="js/big_img.js"></script>
+
+</html>

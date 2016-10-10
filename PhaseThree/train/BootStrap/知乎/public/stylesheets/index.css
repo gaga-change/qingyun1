@@ -1,0 +1,33 @@
+html {
+  height: 100%; }
+
+body {
+  font-size: 14px;
+  height: 100%;
+  background-color: AliceBlue; }
+
+.body {
+  height: 100%;
+  position: relative;
+  min-height: 500px; }
+
+.container {
+  width: 300px;
+  position: relative;
+  top: 50%;
+  height: 500px;
+  margin-top: -250px; }
+
+.container-header {
+  text-align: center; }
+  .container-header img {
+    width: 100px; }
+  .container-header p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px; }
+
+.download-app {
+  margin-top: 60px; }
+
+/*# sourceMappingURL=index.css.map */

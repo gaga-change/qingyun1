@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../package/dong.js"></script>
+    <title>我的响应式</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0
+        }
+        .wrapper{
+
+        }
+        .left,.right{
+            background-color: #FFCCF7;
+            height: 500px;
+            width: 20%;
+            float: left;
+            -webkit-transition: width 1s ease;
+            -moz-transition: width 1s ease;
+            -o-transition: width 1s ease;
+            -ms-transition: width 2s ease;
+            transition: width 1s ease;
+        }
+        .middle{
+            background-color: #B1FFFC;
+            height:800px ;
+            width: 50%;
+            float: left;
+            margin-left: 2%;
+            margin-right: 2%;
+            -webkit-transition: width 1s ease;
+            -moz-transition: width 1s ease;
+            -o-transition: width 1s ease;
+            -ms-transition: width 2s ease;
+            transition: width 1s ease;
+            transition: margin 1s ease;
+            -moz-transition: margin 1s ease;
+            -o-transition: margin 1s ease;
+            -ms-transition: margin 2s ease;
+            transition: margin 1s ease;
+        }
+        .right{
+            background-color: #FFFAB1;
+        }
+        @media only screen and (min-width: 1024px) {
+            .wrapper {
+                width: 1000px;
+                margin: auto;
+            }
+
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 1024px) {
+            .right{
+                width: 0;
+            }
+            .left{
+                width: 35%;
+            }
+            .middle{
+                width: 64%;
+                margin-left: 1%;
+                margin-right: 0%;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .left,.middle,.right{
+                width: 98%;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="left">
+
+    </div>
+    <div class=middle>
+
+    </div>
+    <div class="right">
+
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+</script>
+</html>

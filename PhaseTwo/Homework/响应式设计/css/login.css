@@ -1,0 +1,79 @@
+/*表单部分*/
+form.my_form{
+
+}
+form.my_form>div>span:first-child{
+    display: inline-block;
+    width: 50px;
+    margin-right: 20px;
+    direction: rtl;
+    font-size: 120%;
+    /*-webkit-transition: width 1s ease;*/
+    /*-moz-transition: width 1s ease;*/
+    /*-o-transition: width 1s ease;*/
+    /*-ms-transition: width 2s ease;*/
+    /*transition: width 1s ease;*/
+
+    -webkit-transition: direction 1s ease;
+    -moz-transition: direction 1s ease;
+    -o-transition: direction 1s ease;
+    -ms-transition: direction 2s ease;
+    transition: direction 1s ease;
+}
+form.my_form input[type="text"]{
+    border:1px solid gainsboro;
+    width: 200px;
+    /*height: 30px;*/
+    font-size: 12px;
+    padding: 5px 6px;
+    border-radius: 4px;
+    -webkit-transition: width 1s ease,background-color 1s ease;
+    -moz-transition: width 1s ease,background-color 1s ease;
+    -o-transition: width 1s ease,background-color 1s ease;
+    -ms-transition: width 2s ease,background-color 1s ease;
+    transition: width 1s ease,background-color 1s ease;
+
+
+}
+
+
+form.my_form input[type="text"]:focus{
+    border: 1px solid #8b9497;
+}
+form.my_form >div{
+    margin:20px
+}
+form.my_form div:last-child>input{
+    border-top-color: #8b9497;
+    background-color: #dfdfdf;
+    color: #020001;
+    font-weight: 900;
+    padding: 8px 20px;
+    border: 4px;
+    box-shadow: 1px 1px 3px gray;
+
+    animation:myfirst 5s;
+    -moz-animation:myfirst 5s; /* Firefox */
+    -webkit-animation:myfirst 5s; /* Safari and Chrome */
+    -o-animation:myfirst 5s; /* Opera */
+
+
+    -webkit-transition: width 1s ease,background-color 1s ease;
+    -moz-transition: width 1s ease,background-color 1s ease;
+    -o-transition: width 1s ease,background-color 1s ease;
+    -ms-transition: width 2s ease,background-color 1s ease;
+    transition: width 1s ease,background-color 1s ease;
+}
+form.my_form div:last-child>input:hover{
+    background-color: #bebebe;
+    color: white;
+
+
+}
+@keyframes myfirst
+{
+    /*from{*/
+        /*background-color: #dfdfdf;}*/
+    /*to{*/
+        /*background-color:  #bebebe;}*/
+}

@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>Bom</title>
+	<meta charset="utf-8">
+	<link id="outter" rel="stylesheet" type="text/css" href="global.css">
+	<style id="inner" type="text/css">
+		#main { border: 1px solid gold;width:600px; margin:50px auto; }	
+	</style>
+
+	<style type="text/css">
+
+
+	</style>
+
+	<script type="text/javascript">
+		"use strict"; //严格/严令模式
+
+		var areaID = 4;
+
+		window.onload = function(){
+			document.querySelector("#area option[value='"+areaID+"']").selected = true;
+		};
+
+		function show() {
+			// alert(document.getElementById("username").value);
+			// alert(document.getElementById("password").value);
+			// alert(document.getElementById("desc").value);
+			// // 对于下拉列表而言，哪个选项被选中，它就是 下拉列表 的value值的提供者
+			// // document.getElementById("area").lastChild
+			// document.querySelector("#area option[value='"+areaID+"']").selected = true;
+			// alert(document.getElementById("area").value); 
+
+			alert(document.querySelector("input[name=sex]:checked").value);
+			// alert(document.querySelector("input[name=interesting][checked='checked']").value);
+
+			// alert(document.getElementById("username").value);
+			// alert(document.getElementById("username").value);
+
+		}
+
+	</script>
+</head>
+<body>
+
+	<form action="" method="" >
+		<input id="username" type="text" value=""/><br><br>
+		<input id="password" type="password" value=""/><br><br>
+		<input id="man" name="sex" type="radio" value="1" checked="" /><label for="man">男</label>&nbsp;&nbsp;&nbsp;
+		<input id="woman" name="sex" type="radio" value="0" checked=""  /><label for="woman">女</label><br><br>
+		<input id="sport" name="interesting" type="checkbox" value="1"/><label for="sport">运动</label>&nbsp;&nbsp;&nbsp;
+		<input id="game" name="interesting" type="checkbox" value="2"/><label for="game">游戏</label>&nbsp;&nbsp;&nbsp;
+		<input id="travel" name="interesting" type="checkbox" value="3"/><label for="travel">旅行</label>&nbsp;&nbsp;&nbsp;
+		<input id="shopping" name="interesting" type="checkbox" value="4"/><label for="shopping">逛街</label>&nbsp;&nbsp;&nbsp;
+		<input id="reading" name="interesting" type="checkbox" value="5"/><label for="reading">阅读</label>&nbsp;&nbsp;&nbsp;
+		<input id="swimming" name="interesting" type="checkbox" value="6"/><label for="swimming">游泳</label>&nbsp;&nbsp;&nbsp;
+		<br><br>
+		<select id="area">
+			<option value="1">郑州</option>
+			<option value="2" selected="true">洛阳</option>
+			<option value="3">开封</option>
+			<option value="4">新乡</option>
+		</select><br><br>
+		<textarea id="desc" value="please input..."></textarea><br><br>
+		<input type="button" value="我是按钮" onclick="show()" />&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" value="我是Submit"/>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" value="我是Reset"/><br><br>
+
+	</form>
+
+
+</body>
+</html>

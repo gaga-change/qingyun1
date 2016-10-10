@@ -1,0 +1,301 @@
+*{ margin: 0;padding: 0;}
+body{font-family: "翩翩体-简","STKaiti";font-size: 16px;}
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color: SeaGreen  ;
+}
+ul{list-style-type: none;}
+li{display: inline;}
+#collection{
+	width: 100%;
+	height: 100%;
+}
+/*-----------页眉--------------*/
+#header{
+	width: 100%;
+	height: 140px;
+	/*background: rgb(236,240,243);*/
+	min-width: 950px;
+}
+/*页眉高级菜单*/
+#header .top{
+	padding-right: 12px;
+	font-size: 12px;
+	height: 28px;
+	background-color: DimGray ; 
+	line-height: 28px;
+}
+/*两个ul*/
+#header .top ul{
+	
+}
+/*所有li*/
+#header .top ul li{
+	float: left;
+}
+/*li的鼠标接触事件*/
+#header .top  ul li:hover{
+	background-color:black; 
+}
+/*右边的菜单*/
+#header .top ul + ul {
+	float: right;
+}
+
+#header .top a{
+	display: block;
+	color: Chartreuse ;
+	padding-left: 12px;
+	padding-right: 12px;
+
+}
+/*页眉电影搜索*/
+#header .middle{
+	width: 950px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	height: 57px;
+	/*background-color: rgb(236,240,243);*/
+	width: 950;
+	margin: 0 auto 0 auto;
+	line-height: 50px;
+}
+#header .middle img{
+	vertical-align: middle;
+}
+#header .middle  img + input{
+	width: 260px;
+	height: 30px;
+	margin-left: 60px;
+}
+#header [type="button"]{
+	vertical-align: middle;
+	border-style: none;
+	width: 37px;
+	height: 35px;
+	background: url(../img/sou.png) no-repeat 0 -40px;
+
+}
+/*---------------------添加部分 2*/
+#header .middle ul{
+	margin-top: 14px;
+	vertical-align: middle;
+	/*background-color: red;*/
+	float: right;
+}
+#header .middle li{
+	float: left;
+}
+#header .middle a{
+	margin-left: 12px;
+	/*border:2px dotted red;*/
+	display: block;
+	width: 40px;
+	height: 20px;
+	overflow: hidden;
+	background-image: url(../img/anony_nav_logo.png);
+}
+#header .middle .a{	background-position:0 0; }
+#header .middle .b{background-position:-60px 0;}
+#header .middle .c{background-position:-120px 0;}
+#header .middle .d{background-position:-180px 0;}
+#header .middle .d{background-position:-241px 0;}
+#header .middle .f{background-position:-300px 0;}
+#header .middle .g{background-position:-359px 0;}
+#header .middle .h{background-position:-422px 0;}
+
+/*页眉电影菜单*/
+#header .bottom{
+	margin:0 auto 0;
+	width: 950px;
+	font-size: 13px;
+	height: 40px;
+	line-height: 40px;
+	background-color: orange;
+
+}
+#header .bottom ul{
+	float: left;
+}
+#header .bottom li{
+	float: left;
+}
+#header .bottom a{
+	display: block;
+	margin-right:20px;
+	margin-left: 20px;
+	color:Indigo   ;
+}
+#header .bottom a:hover {
+	font-size: 2em;
+}
+/*------------内容--------------*/
+#content{
+	margin: 20px auto 0;
+	width: 950px;
+	/*background: yellow;*/
+	position: relative;
+}
+/*正在热映*/
+#content .top{
+	width: 590px;
+	/*background-color: aliceblue;*/
+	float: left;
+}
+#content .menu span:first-child{
+	font-size: 16px;
+}
+#content .menu span{
+	margin-right:15px; 
+	font-size: 12px;
+}
+
+/*---------所有电影的列表*/
+#all_movie >ul{
+}
+/*---------每一个电影的所有信息集合*/
+#all_movie >ul>li>ul{
+	margin: 0 9px;
+	width: 128px;
+	/*background-color: yellow;*/
+	float: left;
+}
+/*---------每一个电影各个的信息*/
+#all_movie >ul>li>ul>li {
+
+	display: inherit;
+	text-align: center;
+	/*background-color: red;*/
+}
+.movie_img img{
+	overflow: hidden;
+	width: 128px;
+	height: 200px;
+}
+.movie_star{
+	display: inline-block;
+	width: 55px;
+	height: 11px;
+}
+#one .movie_star{
+	background: url(../img/star.png) no-repeat 0 0px;
+}
+#two .movie_star{
+	background: url(../img/star.png) no-repeat 0 -66px;
+}
+#three .movie_star{
+	background: url(../img/star.png) no-repeat 0 -33px;
+}
+#four .movie_star{
+	background: url(../img/star.png) no-repeat 0 -33px;
+}
+.movie_score{
+	font-size: 12px;
+}
+.movie_buy{
+	display: inline-block;
+	width: 100px;
+	background-color: green;
+}
+.movie_buy a{
+	color: white;
+}
+/*中间的大熊猫*/
+#content .middle{
+	clear:both;	
+	padding-top: 30px;
+}
+/*最受欢迎的影评*/
+#content .bottom{
+	padding-top: 30px;
+	clear:both;
+	width: 590px;
+	/*background-color: orange;*/
+}
+#content  .menu{
+	padding-bottom: 15px;
+	border-bottom: 1px dotted gray;
+	margin-bottom: 15px;
+}
+#content .comment{
+	width: 590px;
+	line-height: 160%;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px dotted gray;
+}
+/*---------电影图片*/
+#content .comment div:first-child{
+	float: left;
+	padding-right: 10px;
+}
+/*---------标题*/
+#content .comment div+div{
+	/*font-weight: bold;*/
+	font-size: 16px;
+}
+/*---------评论的人 和 星星*/
+#content .comment div+div+div{
+	font-size: 12px;
+	color: gray;
+}
+/*---------评论部分内容*/
+#content .comment div+div+div+div{
+	font-size: 12px;
+	line-height: 140%;
+}
+#comment_one .movie_star{
+	background: url(../img/star.png) no-repeat 0 -88px;
+}
+#comment_two .movie_star{
+	background: url(../img/star.png) no-repeat 0 -77px;
+	
+}
+#comment_three .movie_star{
+	background: url(../img/star.png) no-repeat 0 -66px;	
+}
+#comment_four .movie_star{
+	background: url(../img/star.png) no-repeat 0 -55px;
+}
+/*本周口碑榜*/
+#content .right{
+	margin-top: 100px;
+	width: 300px;
+	position: absolute;
+	right: 0px;
+	top:0px;
+	background-color: AliceBlue;
+}
+#content .right li{
+	padding:5px 0 ;
+	font-size: 12px;
+	display: list-item;
+	border-bottom: 1px dotted gray;
+}
+#content .right ol{
+	margin-left: 15px;
+	list-style-type: none;
+}
+.rank span{
+	font-size: 11px;
+	margin-right: 5px;
+}
+/*-------------页脚-------------*/
+#footer{
+	margin: 30px auto;
+	padding-top: 10px;
+	border-top: 2px dotted black;
+	text-align: center;
+	width: 950px;
+	font-size: 12px;
+	color: gray;
+	font-family: STKaiti;
+}
+/*-------------广告-------------*/
+#advertisement{
+	text-align: center;
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+
+}

@@ -1,0 +1,131 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>再线BMI计算器</title>
+	<link rel="stylesheet" type="text/css" href="bmi_calculator.css">
+</head>
+<body onload="init()">
+	<div id="title">
+		<div>
+			<div class="middle">
+				<div>
+					<div class="left">
+					</div>
+					<div class="right">
+						<h2>免费在线BMI计算器</h2>
+						<p>身体质量指数 (Body Mass Index, 简称BMI), 亦称克托莱指数, 是目前国际上常用的衡量人体胖瘦程度以及是否健康的一个标准。BMI 值超标，意味着你必须减肥了。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="advertisement">
+		<img src="img/haha.gif">
+		<h1>便宜出售该广告位:13243177263</h1>
+	</div>
+	<div id="content">
+		<div class="top">
+			<div class="top_calculate">
+				<h2>免费计算你的身体质量指数BMI</h2>
+				<div id="you_message">
+					<img src="img/arrow.png">你的 BMI 值:<span id="you_bmi">18.7</span>,身体状态:<span id="you_body">正常</span>
+				</div>
+				<div class="my_measure">
+					<span>度量单位:</span>
+					<label><input id="check_china" type="radio" name="bit"  checked="checked" onclick="changeToChineseMeasure()">公制</label>
+					<label><input id="check_english" type="radio" name="bit" onclick="changeToEnglishMeasure()">英制</label>
+				</div>
+				<div class="my_height">
+					<span>我的身高:</span>
+					<input id="height" type="text">
+					<span>单位:<span id="measure_height">厘米cm</span></span>
+				</div>
+				<div class="my_weight">
+					<span >我的体重:</span>
+					<input id="weight" type="text">
+					<span>单位:<span id="measure_weight">千克kg</span></span>
+				</div>
+				<div class="my_bmi">
+					<span>BMI标准:</span>
+					<select>
+						<option  >中国标准</option>
+						<option checked="checked" >中国标准</option>
+						<option  >我知道你是中国人</option>
+					</select>
+				</div>
+				<div class="my_save">
+					<label>
+						<input type="checkBox">自动保存BMI历史记录
+					</label>
+				</div>
+				<div class="my_calculate">
+					<input id="calculate" onclick="calculate()" type="button" value="计算 BMI">
+				</div>
+
+			</div>
+			<div class="top_message">
+				<h2>BMI 中国标准</h2>
+				<table >
+					<tr style="background-color:AntiqueWhite ">
+						<th>分类</th>
+						<th>BMI范围</th>
+					</tr>
+					<tr style="background-color:Cornsilk  ">
+						<td>偏瘦</td>
+						<td>&lt=18.4</td>
+					</tr>
+					<tr style="background-color:Gainsboro ">
+						<td>正常</td>
+						<td>18.5~23.9</td>
+					</tr>
+					<tr style="background-color:MistyRose  ">
+						<td>过重</td>
+						<td>24.0~27.9</td>
+					</tr>
+					<tr style="background-color:LightBlue  ">
+						<td>肥胖</td>
+						<td>&gt=28.0</td>
+					</tr>
+				</table>
+			</div>
+
+			<ul id="row">
+				<li id="one_row"><img src="img/arrow.png"></li>
+				<li id="two_row"><img src="img/arrow.png"></li>
+				<li id="three_row"><img src="img/arrow.png"></li>
+				<li id="four_row"><img src="img/arrow.png"></li>
+			</ul>
+			<div id="show_image">
+				<img src="img/diao.png">
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="score">
+			<table id="show_all">
+				<tr>
+					<th>#</th>
+					<th>日期</th>
+					<th>身高</th>
+					<th>体重</th>
+					<th>BMI</th>
+					<th>操作</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="footer">
+			<span>版权归严俊东所有,如果雷同纯属必然</span>
+	</div>
+	<div id="advertisement2">
+			<img src="img/heihei.gif">
+			<p>有意出售该广告位:13243177263</p>
+	</div>
+
+
+	<!-- <p id="show"></p> -->
+</body>
+	<script src="bmi_calculator.js">
+		
+	</script>
+</html>

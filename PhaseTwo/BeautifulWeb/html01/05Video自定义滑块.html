@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <title>自定义controls</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: AliceBlue;
+            height: 1000px;
+            padding-left: 100px;
+        }
+
+        #my_player #my_video {
+            background-color: rebeccapurple;
+        }
+
+        /*整个滑块+条*/
+        #my_player #my_range {
+            padding: 4px 0;
+            width: 640px;
+            height: 7px;
+
+            border-radius: 3px;
+            position: relative;
+        }
+
+        /*滑条*/
+        #my_player #range {
+            /*width: 640px;*/
+            height: 7px;
+            background-color: #FC8400;
+            border-radius: 3px;
+            position: absolute;
+            top: 4px;
+            /*margin: 0 3px;*/
+
+        }
+
+        /*滑条背景*/
+        #my_player #rage_background {
+            background-color: #505050;
+            width: 640px;
+            height: 7px;
+            border-radius: 3px;
+            /*margin: 0 3px;*/
+        }
+
+        /*滑块*/
+        #my_player #slide {
+            /*margin-top: 15px;*/
+            width: 9px;
+            height: 9px;
+            border-radius: 8px;
+            background-color: aqua;
+            border: 3px solid aqua;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #my_player #slide:hover {
+            background-color: #FC8400 !important;
+        }
+    </style>
+</head>
+<body>
+<div id="my_player">
+    <video id="my_video" src="../video/video1.mp4" autoplay loop width="640" height="480"></video>
+    <div id="pause"></div>
+    <div id="my_range">
+        <div id="rage_background"></div>
+        <div id="range"></div>
+        <div id="slide"></div>
+    </div>
+    <div id="show_time"></div>
+</div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var width = 640;
+        var height = 480;
+        var slideSize = 15;
+        var maxSlideLength = 625;
+        var myPlayer = $("#my_player");
+        var slide = myPlayer.find("#slide");
+        var range = myPlayer.find("#range");
+        var myRange = myPlayer.find("#my_range");
+
+
+        //滑块按下事件
+        console.log(myPlayer.find("#slide").get(0));
+        var ifDown = false;
+        var downMousePos = 0;
+        var oldSize = 0
+        var oldDate = new Date();
+        myPlayer.find("#slide").mousedown(function (e) {
+            console.log("down");
+            downMousePos = e.pageX;
+            oldSize = parseInt($(this).css("left"));
+            ifDown = true;
+            slide.css("backgroundColor", "#FC8400");
+
+        });
+        //滑块移动及优化
+        (function () {
+            var me = arguments.callee;
+            $("body").on("mousemove", function (e) {
+                if (ifDown) {
+                    var newLeft = e.pageX - downMousePos + oldSize;
+
+//                    console.log(newLeft);
+                    setSlideLeft(newLeft);
+                }
+                $("body").off("mousemove", arguments.callee);
+                window.setTimeout(function () {
+                    me();
+                }, 20);
+            });
+        })();
+        myRange.on("click",function (e) {
+            var left=$(this).get(0).offsetLeft;
+            setSlideLeft(e.clientX-left-8);
+//            console.log(left);
+        });
+//        鼠标弹起
+        $("body").mouseup(function () {
+            console.log("up");
+            ifDown = false;
+            slide.css("backgroundColor", "");
+        })
+        //改变自定义滑块
+        function setSlideLeft(newLeft) {
+            if (newLeft < 0) {
+                newLeft = 0;
+            } else if (newLeft > width - slideSize) {
+                newLeft = width - slideSize;
+            }
+            slide.css("left", newLeft);
+            range.css("width", newLeft + 3);
+            console.log(getPosition());
+        }
+        function getPosition() {
+            var temp =parseInt(slide.css("left"));
+            return temp/maxSlideLength;
+        }
+    });
+
+
+</script>
+</html>

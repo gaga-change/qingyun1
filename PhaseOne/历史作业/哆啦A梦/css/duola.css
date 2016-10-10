@@ -1,0 +1,128 @@
+
+
+/*------内容-全部------*/
+#wrapper{
+	width: 950px;
+	min-height: 420px;
+	margin: 20px auto;
+	background-color: Aliceblue;
+	overflow: hidden;
+}
+#wrapper h1{
+	font-size: 25px;
+	color: #494949;
+}
+/*左边*/
+#wrapper .left{
+	width: 590px;
+	padding-top: 20px;
+	float: left;
+	/*background-color: white;*/
+}
+/*三种排序*/
+#wrapper .sort{
+	font-size: 12px;
+	color:#37a;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted gray;
+}
+#wrapper .sort span{
+	cursor: pointer;
+}
+/*显示全部图片及信息*/
+#wrapper .all_movie{
+	width: 100%;
+	margin-top: 20px;
+}
+#wrapper .all_movie ul{
+	overflow: hidden;
+	padding-left: 5px;
+}
+#wrapper .all_movie li{
+	width: 135px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+	float: left;
+}
+#wrapper .all_movie li img{
+	width: 121px;
+	height: 170px;
+	cursor: pointer;
+
+}
+#wrapper .all_movie li>a+p{
+	font-size: 12px;
+	color: gray;
+	line-height: 20px;
+
+}
+#wrapper .all_movie li>a+p+p{
+	line-height: 20px;
+	font-size: 14px;
+}
+/*翻页*/
+#wrapper .show_page{
+
+}
+/*右边*/
+#wrapper .right{
+	width: 310px;
+	margin-top: 30px;
+	float: right;
+	/*background-color: yellow;*/
+}
+#wrapper .right>p{
+	margin-bottom: 10px;
+
+}#wrapper .right>ul li{
+	width: 100px;
+	height: 30px;
+	display:block;
+	line-height: 30px;
+	border-bottom: 1px dotted gray;
+}
+#wrapper .right>ul a{
+	font-size: 12px;
+}
+#wrapper .right >h3{
+	margin-top: 20px;
+	font-size: 17px;
+}
+#wrapper .add_movie{
+	line-height: 40px;
+}
+#wrapper .add_movie em{
+	font-size: 12px;
+	padding-left: 30px;	
+
+}
+#wrapper .add_movie span:first-child{
+	margin-right: 10px;
+	font-size: 13px;
+}
+#wrapper .add_movie span:first-child+input+span{
+	margin-left: 10px;
+	font-size: 12px;
+	color: red;
+
+}
+#wrapper .add_movie input[type="text"] {
+	height: 20px;
+	border-color: white;
+	border-radius: 3px;
+}
+#wrapper .add_movie input[type="button"]:hover{
+	border-radius: 3px;
+	background-color: gray;
+}
+#wrapper .add_movie input[type="button"]{
+	display: block;
+	padding: 4px 8px;
+	background-color: Aliceblue;
+}
+
+
+
+
+

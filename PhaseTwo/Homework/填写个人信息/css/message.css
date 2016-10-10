@@ -1,0 +1,102 @@
+#header h2 {
+    font-size: 20px;
+    /*height: 50px;*/
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 3px #ccc;
+    border-radius: 7px;
+}
+
+.wrapper section {
+    /*overflow: hidden;*/
+}
+
+.wrapper section article {
+    overflow: hidden;
+    position: relative;
+}
+
+#scroll {
+    width: 1740px;
+    height: 400px;
+    position: relative;
+    z-index: 20;
+}
+
+#scroll > div {
+    width: 580px;
+    height: 400px;
+    float: left;
+}
+
+#scroll > div:first-child {
+    background-color: aqua;
+}
+
+#scroll > div:first-child + div {
+    background-color: lightgoldenrodyellow;
+}
+
+#scroll > div:first-child + div + div {
+    background-color: cadetblue;
+}
+
+#footer p {
+    font-size: 12px;
+    font-family: "STKaiti", sans-serif;
+}
+
+/*内容整理*/
+/*所有的标签*/
+#scroll li span:first-child{
+    width: 100px;
+    margin-right: 20px;
+    display: inline-block;
+    text-align: right;
+}
+/*所有的li*/
+#scroll ul{
+    line-height: 40px;
+}
+/*所有的input*/
+#scroll input{
+    padding:6px 8px;
+    width: 200px;
+    border: 1px solid #c3c8cd ;
+    border-radius: 4px;
+    font-size:10px;
+}
+#scroll input[type="radio"]{
+    /*padding:0 20px;*/
+    margin-left: 20px;
+    width: 20px;
+}
+#scroll textarea{
+    border: 1px solid #c3c8cd ;
+    vertical-align: middle;
+    margin-top:20px;
+}
+
+/*提交和重置按钮*/
+#aside h1{
+    font-size: 17px;
+}
+#aside input{
+    background-color:AliceBlue;
+    padding:3px 10px;
+    margin-bottom: 20px;
+    border : 1px dotted black ;
+    border-radius: 4px;
+}
+#aside input:hover{
+    background-color: aqua;
+    border-radius: 4px;
+}
+/*脚*/
+#body > footer{
+    border-top:1px dotted darkgray;
+    background-color: white;
+    height: 30px;
+    line-height: 20px;
+    color: gray;
+}

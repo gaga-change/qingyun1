@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	function Person(name,age,salary){
+		this.name=name;
+		this.age=age;
+		this.salary=salary;
+	}
+	Person.prototype.show=function(){
+		console.log("我是人");
+	}
+	function Man(salary){
+		// Person.apply(this,arguments);
+		this.salary=salary;
+		this.getAllSalary=function(){
+			return this.constructor.prototype.salary+this.salary;
+		}
+
+	}
+
+	Man.prototype=Object.create(new Person("东",21,200));
+	Man.prototype.constructor=Man;
+
+	var man=new Man(2000);
+	man.show();
+	console.log("我的工资:"+man.salary);
+	console.log("加上补贴:"+man.getAllSalary());
+
+
+	</script>
+
+</body>
+</html>

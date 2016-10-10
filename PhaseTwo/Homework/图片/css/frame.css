@@ -1,0 +1,47 @@
+body{
+    /*background-color:  AliceBlue;*/
+    /*padding: 0 20px;*/
+}
+div.body{
+    margin: 0 20px;
+    /*width:100%;*/
+    /*height:800px;*/
+    /*background-color:  AliceBlue;*/
+    overflow: scroll;
+}
+#header{
+    /*background-color: antiquewhite;*/
+    height: 40px;
+}
+#section .content{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /*background-color: aquamarine;*/
+}
+
+#nav {
+    overflow: hidden;
+}
+
+#nav ul.left {
+
+}
+
+#nav ul.left li {
+    float: left;
+}
+
+#nav ul.left li a {
+    font-size: 16px;
+    display: inline-block;
+    padding: 4px 6px;
+    cursor: pointer;
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+#nav ul.left li a:hover {
+    background-color: aqua;
+    border-radius: 5px;
+}

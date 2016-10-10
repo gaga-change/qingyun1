@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../package/myRange.js"></script>
+    <title>音频的练习</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+<audio src="../music/邵夷贝%20-%20我在海边等你.mp3" loop autoplay controls></audio>
+
+
+<audio id="music" src="../music/邵夷贝%20-%20我在海边等你.mp3" loop autoplay  controls></audio>
+<div id="range"></div>
+<div id="voice"></div>
+<input id="pause" type="button" value="暂停">
+<input id="start" type="button" value="播放">
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var myAudio=$("#music").get(0);
+        myAudio.src="../music/haha.mp3";
+        var ALLTIME=myAudio.duration;
+        ALLTIME=300;
+        var range=new jQuery.Range();
+        range.setRange("range","4px","100px","pink","gray","green",function () {
+
+        },function change (value) {
+            myAudio.currentTime=value*ALLTIME;
+        });
+        console.log(Math.ceil(myAudio.duration));
+
+//        进度解决
+//        console.log(myAudio.currentTime=20);
+        myAudio.addEventListener("timeupdate",function () {
+            console.log(myAudio.currentTime);
+            range.setValue(myAudio.currentTime/ALLTIME,false);
+        });
+
+
+//        声音解决
+
+        var range2= new jQuery.Range();
+
+        range2.setRange("voice","4px","100px","pink","gray","green",function () {
+
+        },function change (value) {
+            myAudio.volume=value;
+        });
+        range2.setValue(0.5,true);
+
+
+//        暂停
+        $("#pause").click(function () {
+            myAudio.pause();
+        });
+        $("#start").click(function () {
+            myAudio.play();
+        });
+
+//        下一首
+
+//        上一个首
+
+//        循环 随机 单曲
+
+
+    })
+
+
+</script>
+</html>

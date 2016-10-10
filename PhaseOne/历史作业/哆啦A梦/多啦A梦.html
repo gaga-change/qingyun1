@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/> 
+	<title>哆啦A梦......海报</title>
+	<link rel="stylesheet" type="text/css" href="css/title.css">
+	<link rel="stylesheet" type="text/css" href="css/duola.css">
+</head>
+<body>
+	<div id="header">
+		<div class="top">
+			<ul>
+				<li><a href="">豆瓣</a></li>
+				<li><a href="">读书</a></li>
+				<li><a href="">电影</a></li>
+				<li><a href="">音乐</a></li>
+				<li><a href="">同城</a></li>
+				<li><a href="">小组</a></li>
+				<li><a href="">阅读</a></li>
+				<li><a href="">FM</a></li>
+				<li><a href="">东西</a></li>
+				<li><a href="">集市</a></li>
+				<li><a href="">更多</a></li>
+			</ul>
+			<ul>
+				<li><a href="">下载豆瓣客户端</a></li>
+				<li><a href="登入豆瓣.html">登入</a></li>
+				<li><a href="">注册</a></li>
+			</ul>
+		</div>
+		<div class="middle">
+			<img src="img/lg_movie_a12_2.png" />
+			<input type="text" /><input type="button" />
+		</div>
+		<div class="bottom">
+			<ul>
+				<li><a href="">影讯&购票</a></li>
+				<li><a href="">选电影</a></li>
+				<li><a href="">电视机</a></li>
+				<li><a href="">排行榜</a></li>
+				<li><a href="">分类</a></li>
+				<li><a href="">影评</a></li>
+				<li><a href="">2015年度榜单</a></li>
+				<li><a href="">豆瓣观影报告</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="wrapper">
+		<h1>哆啦A梦：新·大雄的日本诞生 ドラえもん 新・のび太の日本誕生的海报</h1>
+		<div class="left">
+			<div class="sort">
+				<span id="sort_1" onclick="sortDefault(this)">按推荐排序</span>·<span  id="sort_2" onclick="sortSize(this)">按尺寸排序</span>
+			</div>
+			<div class="all_movie">
+			<ul id="show_movie_message">
+				<!-- <li><a href="大图.html?no=10"><img src="movie_img/p1.jpg"></a><p>1410*2000</p><p>正式海报 中国大陆</p></li>
+				<li><img src="movie_img/p2.jpg"><p>1410*2000</p><p>正式海报 中国大陆</p></li>
+				<li><img src="movie_img/p1.jpg"><p>1410*2000</p><p>正式海报 中国大陆</p></li>
+				<li><img src="movie_img/p1.jpg"><p>1410*2000</p><p>正式海报 中国大陆</p></li> -->
+			 </ul>
+				
+			</div>
+			<div class="show_page">
+				
+			</div>
+		</div>
+		<div class="right">
+			<p>&gt<a href="">全部图片</a></p>
+			<ul>
+				<li><a href="">剧照(0)</a></li>
+				<li><a id="show_num_a" href="">海报(20)</a></li>
+				<li><a href="">壁纸(0)</a></li>
+			</ul>
+			<h3>添加图片</h3>
+			<div class="add_movie">
+				<p><span>名称</span><input id="lei_1" type="text" ><span id="remind_1"></span></p>
+				<em>请放在movie_img文件夹下,后缀必须为jpg</em>
+				<p><span>宽度</span><input id="lei_2" type="text"><span id="remind_2"></span></p>
+				<p><span>高度</span><input id="lei_3" type="text"><span id="remind_3"></span></p>
+				<p><span>标题</span><input id="lei_4" type="text"><span id="remind_4"></span></p>
+				<em>标题长度不能超过9</em>
+				<p><input id="abcde" type="button" onclick="addMovieButton()" value="添加"></p>
+			</div>
+		</div>
+		
+	</div>
+	<div id="footer">
+		<span>版权所有 严俊东</span>
+	</div>
+</body>
+<script src="js/global.js"></script>
+<script src="js/duola.js"></script>
+</html>		

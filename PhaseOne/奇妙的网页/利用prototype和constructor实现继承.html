@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>with</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	var name;
+
+
+
+	function Grandfather(gName){
+		this.salary=100;
+		this.gName=gName;
+		this.talk=function(){
+			console.log("Grandfather:"+this.gName);
+		}
+	}
+
+
+
+	function Person(name,age){
+		this.salary=1000;
+		this.name=name;
+		this.age=age;
+		this.talk=function(){
+			console.log("Person:"+name);
+		}
+
+	}
+	function Student(grade){
+		this.salary=10000;
+		this.grade=grade;
+		this.talk=function(){
+			console.log(this.gName);
+			console.log("Student:"+this.name);
+			// console.log("总工资:"+(this.Asalary+this.Bsalary));
+			// var allSalary=this.constructor.prototype.salary+this.salary+
+			// 	this.constructor.prototype.constructor.prototype.salary;
+			
+			// console.log(this.constructor.prototype);
+			// console.log(allSalary);
+		}
+	}
+
+
+
+	var grandfather=new Grandfather("我是爷爷");  
+	Person.prototype= grandfather;
+	// Person.prototype.constructor=Person;
+	console.log();
+
+	var person=new Person("a",13);
+
+	Student.prototype=person;
+	// Student.prototype.constructor=Student;
+
+	var student=new Student("快四年级");
+
+	// student.talk();
+
+	// for(i in student){
+	// 	console.log(student[i]);
+	// }
+
+</script>
+</html>

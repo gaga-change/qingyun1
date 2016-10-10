@@ -1,0 +1,26 @@
+.container{
+  /*width: 800px;*/
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*.container {*/
+/*}*/
+/*fieldset {*/
+  /*margin: 20px auto;*/
+  /*width: 100px;*/
+  /*height: 150px;*/
+  /*background-color: AliceBlue;*/
+  /*text-align: center;*/
+/*}*/
+/*fieldset [type] {*/
+  /*display: inline-block;*/
+  /*margin: 10px auto;*/
+/*}*/
+/*fieldset [type='text'] {*/
+  /*font-size: 12px;*/
+  /*padding: 3px 5px;*/
+/*}*/

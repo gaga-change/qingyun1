@@ -1,0 +1,29 @@
+/*标题部分*/
+#header h1 {
+    text-align: center;
+}
+
+/*滚动的部分*/
+#top{
+    width: 600px;
+    height: 600px;
+    background-color: #222222;
+    margin:20px auto;
+    overflow: hidden;
+}
+#scroll{
+    background-color: yellow;
+    width:1200px;
+    overflow: hidden;
+    position: relative;
+}
+#scroll .bar,#scroll .pie{
+    width: 600px;
+    height:600px ;
+    float: left;
+    background-color: #ffb48f;
+}
+canvas {
+    background-color: greenyellow;
+    margin-bottom: 20px;
+}

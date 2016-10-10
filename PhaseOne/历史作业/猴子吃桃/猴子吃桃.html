@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>会吃的猴子</title>
+	<style type="text/css">
+		*{padding: 0;margin:0;}
+		body{
+			font-family: serif;
+			font-size: 14px;
+		}
+		#all{
+			width: 800px;
+			margin: 20px auto;
+			/*background-color: Aliceblue;*/
+		}
+		#all > img{
+			width: 300px;
+			height: 400px;
+			float: left;
+		}
+		#all .content{
+			width: 210px;
+			height: 200px;
+			padding-top: 100px;
+			margin-left: 150px;
+			float: left;
+			/*background-color: red;*/
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<img src="monkey.jpg"/>
+		<div class="content">
+			第一天这猴子摘了不知道多少个桃子.
+			它每天吃一半再多 吃一个,到
+			<input id="last_day" type="text">
+			天还剩下
+			<input id="last_peach" type="text" >
+			个.
+			问第一天总共摘了<span id="all_peach">几</span>个
+			<input type="button" onclick="get_all_peach()" value="点">
+		</div>
+		<div id="show_peach" style="clear:both"></div>
+	</div>
+
+</body>
+	<script type="text/javascript">
+		function get_all_peach () {
+			delPeach();
+			var last_day=parseInt(document.getElementById("last_day").value);
+			var last_peach=parseInt(document.getElementById("last_peach").value);
+			if (isNaN(last_day)||isNaN(last_peach)) {
+				alert("不要试探我	~~~");
+				return;
+			}
+			var peachs=0;
+			for(var i=0;i<last_day;i++){
+				if(i==0){
+					peachs=(last_peach+1)*2;
+				}else{
+					peachs=(peachs+1)*2;
+				}
+			}
+			document.getElementById("all_peach").innerHTML=peachs;
+			if(peachs>10000)alert("桃子太多了,你自己画吧!我就不画了~~o(︶︿︶)o");
+			var para=document.createElement("div");
+			var innerText="";
+			for(var i=0;i<peachs;i++){
+				innerText+="<img src='peach.jpg'/>";
+			}
+			// alert(innerText);
+			para.innerHTML=innerText;
+			document.getElementById("show_peach").appendChild(para);
+		}
+
+		function delPeach(){
+			var par=document.getElementById("show_peach");
+			var all=par.getElementsByTagName("div");
+			for(var i=0;i<all.length;i++){
+				par.removeChild(all[i]);
+			}
+			
+		}
+
+
+	</script>
+</html>

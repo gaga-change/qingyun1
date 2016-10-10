@@ -1,0 +1,116 @@
+/*三部分统一设置高度和margin*/
+#body > header, #body > nav, #body > div.wrapper, #body > footer {
+    width: 800px;
+    margin: 20px auto;
+}
+
+/*头和脚*/
+#body > header, #body > footer {
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*内容*/
+#body > div.wrapper {
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+/*内容左部和右部*/
+#body > div.wrapper > section, #body > div.wrapper > aside {
+    height: 400px;
+    padding-top: 30px;
+}
+
+/*内容左部*/
+#body > div.wrapper > section {
+    width: 580px;
+    float: left;
+    padding-left: 20px;
+}
+
+/*内容右部*/
+div.wrapper aside {
+    width: 159px;
+    height: 360px;
+    margin-top: 20px;
+    float: right;
+    padding-left: 20px;
+    border-left: 1px solid chartreuse;
+
+}
+
+/*大导航栏*/
+#body > nav {
+    overflow: hidden;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+#body > nav ul {
+    list-style-type: none;
+}
+
+#body > nav li {
+    float: left;
+}
+
+#body > nav li a {
+    display: inline-block;
+    padding:0 10px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#body > nav li a:hover {
+    background-color: aquamarine !important;
+    border-radius: 5px;
+}
+
+/*真正的内容*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div.wrapper h3 {
+    padding-bottom: 15px;
+}
+
+div.wrapper h4 {
+    margin-top: 15px;
+}
+
+/*section内容*/
+#body > div.wrapper > section p {
+    font-family: "STKaiti", sans-serif;
+    line-height: 1.6;
+    text-indent: 2em;
+    /*white-space:nowrap;*/
+    word-break: break-all;
+}
+
+#body > div.wrapper h1, #body > div.wrapper h2 {
+    padding-bottom: 20px;
+}
+
+/*aside内容*/
+div.wrapper aside p {
+    line-height: 1.6;
+}
+
+div.wrapper aside a {
+    color: darkcyan;
+    font-size: 13px;
+}
+
+div.wrapper aside a:hover {
+    color: deeppink;
+}

@@ -1,0 +1,49 @@
+body{
+    font-size: 12px;
+    font-family: "Microsoft YaHei",Arial,Hevetica,sans-serif;
+    color: #222;
+}
+a{
+    cursor: pointer;
+    /*text-decoration: none;*/
+}
+small{
+    font-size: 100%;
+    /*color: #6d757a;*/
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.row{
+    /*width: 1160px;*/
+    margin: 0 auto;
+}
+.col-xs-6{
+    padding: 0;
+}
+.form-control{
+    font-size: 100%;
+}
+@media screen and (max-width: 1400px){
+    .row{
+        width: 980px;
+    }
+
+}@media screen and (min-width: 1400px){
+    .row{
+        width: 1160px;
+    }
+    #footer .bilibili a{
+        margin-right: 30px;
+    }
+    #footer .door a{
+        margin-right: 20px;
+    }
+    #jin ul.menu{
+        width: 970px;
+    }
+    .wrapper ul.menu >li > a{
+       margin:0 15px;
+    }
+}

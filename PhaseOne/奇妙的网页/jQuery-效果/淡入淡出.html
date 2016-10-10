@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-3.1.0.min.js"></script>
+	<title>title</title>
+	<style type="text/css">
+		p{
+			display: none;
+			background-color: red;
+			height: 100px;
+		}	
+	</style>
+</head>
+<body>
+	<input id="but1" type="button" value="淡出">
+	<input id="but2" type="button" value="淡出">
+	<input id="but3" type="button" value="调整">
+	<input id="but4" type="button" value="淡入|淡出">
+	<p>Hello</p>
+	<div>Hello2</div>
+	<div>Hello3</div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#but1").click(function(){
+			$("p").fadeIn();
+		});
+		$("#but2").click(function(){
+			$("p").fadeOut();
+		});
+		$("#but3").click(function(){
+			// $("p").fadeTo("slow",0.66);
+		});
+		$("#but4").click(function(){
+			$("p").toggle("slow");
+		});
+	});
+	
+	
+</script>
+</html>

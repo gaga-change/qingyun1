@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <title>Storage2</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<p id="get"></p>
+
+</body>
+<script type="text/javascript">
+//var get=sessionStorage.getItem("name");
+var get=localStorage.getItem("name")
+if(get==null)get="没有";
+    $("#get").text(get);
+</script>
+</html>

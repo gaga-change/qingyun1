@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/player.css">
+    <script type="text/javascript" src="package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="package/myRange.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <title>音乐播放器</title>
+</head>
+<body>
+
+
+<div class="body">
+    <header id="header">
+        <ul>
+            <li><a href="">二组的音乐</a></li>
+            <li><a href="">严俊东</a></li>
+        </ul>
+    </header>
+    <div id="wrapper">
+        <section id="section">
+            <article>
+                <div id="top_show">
+                    <span>正在播放<em  id="now_index">1</em>/<em id="arr_length">2</em></span>
+                    <span><a id="last_last_ku">清空全部</a></span>
+                </div>
+                <div id="show_table">
+                    <table id="my_table">
+                        <!--<tr>-->
+                        <!--<td><a>☆</a></td>-->
+                        <!--<td><a>在希望的田野上cover</a></td>-->
+                        <!--<td><a>邵夷贝</a></td>-->
+                        <!--<td>-->
+                        <!--<ul id="shares_ul">-->
+                        <!--<li>-->
+                        <!--<a id="share"><img src="img/分享.png"></a>-->
+                        <!--<ul>-->
+                        <!--<li><a href=""><img src="img/QQ.png" alt=""></a></li>-->
+                        <!--<li><a href=""><img src="img/微博.png" alt=""></a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</td>-->
+                        <!--<td><a>×</a></td>-->
+                        <!--</tr>-->
+                    </table>
+                </div>
+            </article>
+        </section>
+        <aside id="aside">
+            <ul>
+                <li>
+                    <div class="cut_img">
+                        <img class="singer_img_name" src="" width="200px" alt="">
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="singer_style"></a>
+                </li>
+                <li>
+                    <a id="singer_name" class="singer_name" href=""></a>
+                </li>
+                <li>
+                    <div>
+                        <span><em class="singer_pep_num">0</em>关注</span>
+                        <span><em class="singer_muc_num">0</em>首歌</span>
+                    </div>
+                </li>
+                <li><a id="show_lyric">查看歌词</a></li>
+            </ul>
+            <div id="lyric" style="position: absolute;bottom: 0;left: 0;width: 100%">
+                <a id="hide_lyric" style="display: block;border-bottom: 1px solid gray;text-align: center;margin-bottom: 5px">收起歌词</a>
+                <p id="show_lyric_p" style="text-align: center;line-height: 1.6"></p>
+            </div>
+        </aside>
+    </div>
+    <div id="else" style="margin:0px auto;width: 900px ;height: 1px;position: relative">
+        <!--歌曲名-->
+        <em class="left"></em>
+        <!--时间-->
+        <em class="right"></em>
+        <!--<em class="black"></em>-->
+
+        <div id="gaga_chang" style="position: absolute;top: 70px;display: none;">
+            <img src="img/liu小气泡.png" width="50" height="32">
+            <em style="position: absolute;top: 8px;left: 10px;">
+                05.36
+            </em>
+        </div>
+    </div>
+    <footer id="footer">
+        <!--<p>严俊东</p>-->
+        <img src="" alt="" class="singer_img_blur">
+        <div id="my_control">
+            <!--进度条-->
+            <div class="range">
+                    <!--时间条-->
+                <span id="jquery_range">
+                </span>
+            </div>
+            <div class="volume">
+                <!--循环单曲随机-->
+               <img src="img/顺序播放.png" title="2" alt="">
+                <!--喇叭-->
+                <img  src="img/喇叭.png" alt="" style="margin-left: 5px;margin-right: 10px">
+                <!--喇叭条-->
+                <span id="jquery_range_volume" style=""></span>
+            </div>
+            <div class="pause">
+                <!--上一首-->
+                <img src="img/上一首.png" alt="" style="margin-left: 20px">
+                <!--暂停和开始-->
+                <img src="img/开始.png" alt="" style="margin-left: 13px;margin-right:13px;top: 26px;">
+                <!--下一首-->
+                <img src="img/下一首.png" alt="">
+            </div>
+
+        </div>
+        <audio id="my_audio"></audio>
+
+    </footer>
+</div>
+</body>
+</html>

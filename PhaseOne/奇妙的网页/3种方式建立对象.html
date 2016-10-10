@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>万物皆对象</title>
+</head>
+<body>
+<script type="text/javascript">
+	var person=new Object();
+	person.name="严俊东";
+	console.log(person.name);
+	console.log("-------------------");
+	var dog={
+		name:"小汪"
+	};
+	console.log(dog.name);
+	console.log("-------------------");
+	function people(name,sex){
+		this.myName=name;
+		this.sex=sex;
+		this.getSex=getSex;
+		function getSex(){
+			return this.sex;
+		}
+	}
+	var temp=new people(10,11);
+	console.log(temp.myName);
+	console.log(temp.getSex());
+	temp.myName="哈哈";
+	console.log("-------------------");
+	console.log(temp.myName);
+	console.log(temp.getSex());
+	console.log("-------------------");
+
+	for(i in temp){
+		console.log(temp[i]);
+	}
+</script>
+</body>
+</html>

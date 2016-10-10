@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../package/dong.js"></script>
+    <title>title</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>
+        存储的测试
+    </legend>
+
+    <form id="add_per" action="">
+        <table>
+            <tr>
+                <td>姓名</td>
+                <td><input name="name" type="text" title=""/></td>
+            </tr>
+            <tr>
+                <td>年龄</td>
+                <td><input name="age" type="text" title=""></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td><label for="sex_man">男</label><input id="sex_man" value="man" name="sex" type="radio"><label
+                        for="sex_wom">女</label><input id="sex_wom" value="wom" name="sex" type="radio"></td>
+
+            </tr>
+            <tr>
+                <td><input id="save" type="button" value="保存"> </td>
+                <td><input id="show" type="button" value="显示" title="show"> </td>
+            </tr>
+        </table>
+    </form>
+
+</fieldset>
+<fieldset>
+    <table id="show_msg">
+
+    </table>
+</fieldset>
+
+</body>
+<script type="text/javascript">
+    var form=$("#add_per").get(0);
+    var PERS=[];
+
+    $("#save").on("click",function () {
+        var per;
+        with(form){
+            per=new Person(name.value,age.value,sex.value);
+        }
+        PERS.push(per);
+        sessionStorage.setItem("pers",JSON.stringify(PERS));
+    });
+    $("#show").click(function (ele) {
+        PERS=JSON.parse(sessionStorage.getItem("pers"));
+        if(PERS==undefined)PERS=[];
+        console.log(PERS);
+        $("#show_msg").empty();
+        var str="<th>姓名</th>"
+        str+="<th>年龄</th>"
+        str+="<th>性别</th>"
+        str+="<th>操作</th>"
+        var tr=new $("<tr>"+str+"</tr>");
+        $("#show_msg").append(tr);
+        PERS.map(function (ele, index) {
+            var str="<td>"+ele.name+"</td>"
+            str+="<td>"+ele.age+"</td>"
+            str+="<td>"+ele.sex+"</td>"
+            str+="<td><input class='remove_mes' value='删除' type='button' title="+index+" ></td>"
+            var tr=new $("<tr>"+str+"</tr>");
+            $("#show_msg").append(tr);
+        });
+        $("input.remove_mes").on("click",(function (ele) {
+            var self=ele;
+            $(ele.target).closest("tr").remove();
+            PERS=PERS.del(self.target.title);
+
+            sessionStorage.setItem("pers",JSON.stringify(PERS));
+        }));
+    });
+
+    function Person(name, age, sex) {
+        this.name=name;
+        this.age=age;
+        this.sex=sex;
+    }
+</script>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>选做题参考方法之一</title>
+	<style type="text/css">
+		div{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			background-color: Aliceblue;
+		}
+		div span{
+			font-size: 20px;
+			visibility: hidden;
+			position: absolute;
+			right: -200px;
+			top: 0px;
+		}
+		img{
+			vertical-align: middle;
+			float: right;
+			float: right;
+		}
+		img.star:hover,
+		img.star:hover+span+img,
+		img.star:hover+span+img+span+img,
+		img.star:hover+span+img+span+img+span+img,
+		img.star:hover+span+img+span+img+span+img+span+img{
+			/*background-image: url(one.png);有颜色星星路径*/
+			background-color: black;
+		}
+		img.star:hover+span{
+			visibility: visible;
+			background-color: yellow;
+		}
+	}
+
+	</style>
+</head>
+<body>
+	<div>
+		<!-- img下写第一个星星路径 -->
+		<img class="star " src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png">
+		<span>力推</span>
+		<img class="star" src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png">
+		<span>较差</span>
+		<img class="star" src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png">
+		<span>还行</span>
+		<img class="star" src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.pnge">
+		<span>推荐</span>
+		<img class="star" src="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png">
+		<span>很差</span>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试</title>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<!--登入部分-->
+<form class="login" action="/login">
+    <fieldset>
+        <legend>登入</legend>
+        用户名: <input type="text" name="username" title="">
+        密 码: <input type="text" name="password" title="">
+        <input class="login" type="submit" value="登入">
+        <p class="msg">提示</p>
+    </fieldset>
+</form>
+<!--注册部分-->
+<form class="register" action="/register">
+    <fieldset>
+        <legend>注册</legend>
+        用户名: <input type="text" name="username" title="">
+        密 码: <input type="text" name="password" title="">
+        <input class="register" type="submit" value="注册">
+        <p class="register">提示</p>
+    </fieldset>
+</form>
+<!--显示所有数据部分  加删除-->
+</body>
+<script type="text/javascript">
+
+    $("form.login").submit(function (e) {
+        var form = $("form.login").get(0);
+        $.ajax({
+            type: "post",
+            url: "/login",
+            data: "username=" + form.username.value + "&password=" + form.password.value,
+            success: function (msg) {
+                $("p.msg").text(msg.msg);
+            }
+        });
+        return false;
+    });
+    $("form.register").submit(function (e) {
+        var form = $("form.register").get(0);
+        $.ajax({
+            type: "post",
+            url: "/register",
+            data: "username=" + form.username.value + "&password=" + form.password.value,
+            success: function (msg) {
+                $("p.register").text(msg.msg);
+            }
+        });
+        return false;
+    });
+</script>
+</html>

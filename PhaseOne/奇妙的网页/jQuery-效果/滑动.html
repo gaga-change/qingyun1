@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-3.1.0.min.js"></script>
+	<title>title</title>
+	<style type="text/css">
+		p{
+			display: none;
+			/*visibility: hidden;*/
+			background-color: red;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<input id="but1" type="button" value="下拉">
+	<input id="but2" type="button" value="上拉">
+	<input id="but3" type="button" value="上下拉">
+	<p>Hello</p>
+	<div>Hello2</div>
+	<div>Hello3</div>
+
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#but1").click(function(){
+			$("p").slideDown();
+		});
+		$("#but2").click(function(){
+			$("p").slideUp();
+		});
+		$("#but3").click(function(){
+			console.log("haha2");
+			$("p").slideToggle("slow");
+		});
+	});
+</script>
+</html>

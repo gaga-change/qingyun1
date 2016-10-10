@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"
+	<title>省市联动</title>
+</head>
+<body>
+<form >
+	<select id="city" onchange="cityChange(this)" >
+	</select><select id="country">
+	</select>
+</form>
+
+</body>
+<script type="text/javascript">
+	var countries = [{city:"郑州",area:["金水去" , "高新区", "中原区"]},
+		{city:"洛阳",area:["洛龙区" , "西工区", "吉利区"]},
+		{city:"开封",area:["1区" , "2区", "3区"]},
+	]
+	
+	window.onload=function(){
+		countries.map(function(ele,index){
+			var myOption=document.createElement("option");	
+			myOption.innerHTML=ele.city;
+			myOption.setAttribute("value",index);
+			document.getElementById("city").appendChild(myOption);
+		});
+		countries[0].area.map(function(ele,index){
+			var myOption=document.createElement("option");	
+			myOption.innerHTML=ele;
+			myOption.setAttribute("value",index);
+			document.getElementById("country").appendChild(myOption);
+		});
+	}
+	function cityChange(id){
+		// document.querySelectorAll("form select+select").innerHTML="";
+		// id.nextSibling.innerHTML="";
+		
+
+		// console.log("fdsa"+temp);
+		countries[id.value].area.map(function(ele,index){
+			var myOption=document.createElement("option");	
+			myOption.innerHTML=ele;
+			myOption.setAttribute("value",index);
+			document.getElementById("country").appendChild(myOption);
+		});
+	}
+
+
+	
+</script>
+</html>

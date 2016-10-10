@@ -1,0 +1,1312 @@
+/**
+ * Created by qingyun on 16/9/1.
+ */
+var http=require('http');
+
+
+
+function gaga() {
+    var url="http://www.www.chidups.com/soft.360.com/?name=caonimacaonimacaonimacaonima" +
+        "caonimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimaca" +
+        "caonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonima" +
+        "caonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimnimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaoacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonima" +
+        "caonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimaaonima"+Math.random()+"&pasnimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimanimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaocaonimacaonimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimacaonimaccaonimacaonimacaonimacaonimacaos=caonima"+Math.random()+"&submit=";
+    http.get(url,function (res) {
+        res.on('data',function (con) {
+            // console.log(con.toString());
+        });
+        res.on('end',function () {
+            console.log("获取结束")
+        })
+    }).on('error',function (e) {
+        // console.error(e);
+    });
+}
+
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1)
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+},1);
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+},1);
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);
+setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);setInterval(function () {
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();gaga();
+    gaga();
+    gaga();
+
+},1);
+
+
+
+

@@ -1,0 +1,461 @@
+*{ margin: 0;padding: 0;}
+body{font-family: "翩翩体-简","STKaiti",Helvetica,Arial;font-size: 12px;}
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color: SeaGreen  ;
+}
+h1{font-size: 25px;}
+ul{list-style-type: none;}
+/*li{display: inline;}*/
+#collection{
+	width: 100%;
+	height: 100%;
+}
+/*-----------页眉--------------*/
+#header{
+	width: 100%;
+	height: 140px;
+	/*background: rgb(236,240,243);*/
+	min-width: 950px;
+}
+/*页眉高级菜单*/
+#header .top{
+	padding-right: 12px;
+	font-size: 12px;
+	height: 28px;
+	background-color: DimGray ; 
+	line-height: 28px;
+}
+/*两个ul*/
+#header .top ul{
+	
+}
+/*所有li*/
+#header .top ul li{
+	float: left;
+}
+/*li的鼠标接触事件*/
+#header .top  ul li:hover{
+	background-color:black; 
+}
+/*右边的菜单*/
+#header .top ul + ul {
+	float: right;
+}
+
+#header .top a{
+	display: block;
+	color: Chartreuse ;
+	padding-left: 12px;
+	padding-right: 12px;
+
+}
+/*页眉电影搜索*/
+#header .middle{
+	width: 950px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	height: 57px;
+	/*background-color: rgb(236,240,243);*/
+	width: 950;
+	margin: 0 auto 0 auto;
+	line-height: 50px;
+}
+#header .middle img{
+	vertical-align: middle;
+}
+#header .middle  img + input{
+	width: 260px;
+	height: 30px;
+	margin-left: 60px;
+}
+#header [type="button"]{
+	vertical-align: middle;
+	border-style: none;
+	width: 37px;
+	height: 35px;
+	background: url(../img/sou.png) no-repeat 0 -40px;
+
+}
+/*---------------------添加部分 2*/
+#header .middle ul{
+	margin-top: 14px;
+	vertical-align: middle;
+	/*background-color: red;*/
+	float: right;
+}
+#header .middle li{
+	float: left;
+}
+#header .middle a{
+	margin-left: 12px;
+	/*border:2px dotted red;*/
+	display: block;
+	width: 40px;
+	height: 20px;
+	overflow: hidden;
+	background-image: url(../img/anony_nav_logo.png);
+}
+#header .middle .a{	background-position:0 0; }
+#header .middle .b{background-position:-60px 0;}
+#header .middle .c{background-position:-120px 0;}
+#header .middle .d{background-position:-180px 0;}
+#header .middle .d{background-position:-241px 0;}
+#header .middle .f{background-position:-300px 0;}
+#header .middle .g{background-position:-359px 0;}
+#header .middle .h{background-position:-422px 0;}
+
+/*页眉电影菜单*/
+#header .bottom{
+	margin:0 auto 0;
+	width: 950px;
+	font-size: 13px;
+	height: 40px;
+	line-height: 40px;
+	background-color: orange;
+
+}
+#header .bottom ul{
+	float: left;
+}
+#header .bottom li{
+	float: left;
+}
+#header .bottom a{
+	display: block;
+	margin-right:20px;
+	margin-left: 20px;
+	color:Indigo   ;
+}
+#header .bottom a:hover {
+	font-size: 2em;
+}
+/*-------------内容-------------*/
+#content{
+	margin: 20px auto 0 auto;
+	width: 950px;
+	height: auto;
+}
+#content .top{
+	width: 590px;
+	/*height: 100px;*/
+	float: left;
+	background-color: Aliceblue;
+}
+#content .top h1:first-child span{
+	color: gray;
+}
+/*-------------图片*/
+#movie_message .message_img{
+	height: 200px;
+	width: 100px;
+	float: left;
+
+}
+/*-------------详细说明*/
+#movie_message .message_all{
+	max-width: 248px;
+	font-size: 12px;
+	float: left;
+	margin-left: 20px;	
+	color: gray;
+	line-height: 160%;
+}
+#movie_message .message_all strong{
+	color: black;
+} 
+/*-------------豆瓣评分*/
+#movie_message .message_score{
+	width: 155px;
+	float: right;
+	padding-left: 15px;
+	margin-left: 15px;
+	border-left: 1px dotted gray;
+	color: gray;
+}
+/*大分数*/
+.message_score h1{
+	display: inline-block;
+}
+/*图分数和人*/
+.message_score .score_img_people{
+	margin-top: 2px;
+	float: right;
+	width: 100px;
+}
+/*图分数*/
+.message_score .score_img{
+	background-image: url(../img/ic_rating_m.png);
+	overflow: hidden;
+	width: 75px;
+	height: 15px;
+	background-position: 0 -30px;
+	background-repeat: no-repeat;
+}
+/*行块分数*/
+.message_score .score_num{
+	height: 10px;
+	display: inline-block;
+	background-color: Deeppink;
+	margin-right: 3px;
+}
+.message_score .socre_five{
+	margin-top: 10px;	
+	width: 40px;
+	/*background-color: yellow;*/
+}
+.message_score .score_four{
+	width: 30px;
+}
+.message_score .score_three{
+	width: 20px;
+}
+.message_score .score_two{
+	width: 9.3px;
+}
+.message_score .score_one{
+	width: 0.7px;
+}
+/*好于爱情和剧情*/
+.message_score .good_to{
+	width: 100%;
+	height:auto;
+	border-top: 1px dotted gray;
+	margin-top: 15px;
+	padding-top: 15px;
+	/*background-color: yellow;*/
+}
+/*给评分*/
+div.get_score_all{
+	clear: both;
+	width: 590px;
+	height: 50px;
+	background-color: aqua;
+	line-height: 50px;
+}
+/*想看 和  看过*/
+div.get_score_all >span{
+	line-height: 25px;
+	display: inline-block;
+	width: 30;
+	height: 22;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 3px 10px;
+	background-color: rgb(255,229,208);
+}
+div.get_score_all >span:hover{
+	background-color: Pink;
+}
+/*评价框*/
+div.get_score_all div{
+	display: inline-block;
+}
+/*5个评价图片*/
+div.get_score_all>div>div{
+	vertical-align: middle;
+}
+div.get_score_all img{
+	vertical-align: middle;
+	float: right;
+	float: right;
+}
+.get_score_all>div>div{
+	position: relative;
+}
+.get_score_all>div>div span{
+	font-size: 12px;
+	visibility: hidden;
+	position: absolute;
+	right: -40px;
+	top: -17px;
+}
+/*img.one:hover{
+	background-image: url(../img/star_after.png);
+}*/
+
+img.star:hover,
+img.star:hover+span+img,
+img.star:hover+span+img+span+img,
+img.star:hover+span+img+span+img+span+img,
+img.star:hover+span+img+span+img+span+img+span+img{
+	/*background-color: yellow;*/
+	background-image: url(../img/star_after.png);
+}
+img.star:hover+span{
+	visibility: visible;
+	/*background-color: yellow;*/
+}
+/*写短评还有其他*/
+div.get_else{
+	line-height: 50px;
+	clear: both;
+	width: 590px;
+	height: 50px;
+	background-color: Pink;
+	position: relative;
+}
+.get_else>a{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/*上下的箭头*/
+.get_else_menu>span{
+	/*position: relative;*/
+	vertical-align: middle;
+	display: inline-block;
+	height: 13px;
+	width: 10px;
+	background-image: url("../img/a1.png");
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position: 0 -20px;
+}
+/*分享到*/
+.get_else ul{
+	display: inline-block;
+	cursor: pointer;
+}
+li.get_else_menu{
+	display: inline-block;
+	position: relative;
+	/*background-color: yellow;*/
+}
+/*子菜单*/
+.get_else_menu ul{
+	position: absolute;
+	top: 33px;
+	left: 0px;
+	background-color: LightGray;
+	visibility: hidden;	
+	border:1px solid gray ;
+}
+.get_else_menu li{
+	line-height: 30px;
+	width: 80px;
+}
+	
+.get_else_menu li:hover>a{
+	color: Magenta;
+}
+.get_else_menu li:hover{
+	background-color: white;
+}
+
+.get_else_menu li a>span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-image: url(../img/connect_all.png);
+	vertical-align: middle;
+}
+span.connect_wx{
+
+}
+span.connect_xl{
+	background-position: 0 -20px;
+}
+span.connect_qq{
+	background-position: 0 -40px;
+}
+span.connect_tx{
+	background-position: 0 -60px;
+}
+/*显示子菜单*/
+li.get_else_menu:hover>ul{
+	visibility: visible;
+}
+.get_else>span{
+	float: right;
+}
+.get_else >span>a{
+	border-radius: 8px;
+	border:1px solid gray;
+	width: 100px;
+	/*background-color: red;*/
+	padding: 2px 5px ;
+}
+.get_else >span>a:hover{
+	background-color: aqua;
+}
+/*左边内容*/
+#content .right{
+	width: 310px;
+	/*height: 100px;*/
+	float: right;
+	background-color: Aliceblue;
+}
+/*合作联系----各种合作*/
+ul.toger_me{
+	padding-top: 15px;
+	margin-top: 10px;
+	border-top:1px dotted gray;
+	/*background-color: red;*/
+}
+.toger_me li{
+	line-height: 20px;
+}
+/*关注我-----  一堆图标*/
+div.guanzhu_wo{
+	padding-top: 20px;
+	margin-top: 10px;
+	border-top:1px dotted gray;
+}
+/*每一个图标以及信息*/
+.guanzhu_wo span{
+
+	width: 70px;
+	display: inline-block;	
+	text-align: center;
+}
+/*每一个图标*/
+.guanzhu_wo img{
+	width: 40px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.guanzhu_wo a{
+
+}
+/*豆瓣图标*/
+div.douban_logo{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.douban_logo img{
+	width: 310px;
+	height: 80px;
+}
+/*个人图标*/
+.my_logo img{
+	/*position: absolute;*/
+	width: 310px;
+	height: 220px;
+	/*clip: rect(0 310px 215px 0);*/
+}
+.my_logo p{
+	text-align: center;
+}
+/*-------------页脚-------------*/
+#footer{
+	margin: 30px auto;
+	padding-top: 10px;
+	border-top: 2px dotted black;
+	text-align: center;
+	width: 950px;
+	font-size: 12px;
+	color: gray;
+	font-family: STKaiti;
+}
+/*-------------广告-------------*/
+#advertisement{
+	text-align: center;
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+
+}

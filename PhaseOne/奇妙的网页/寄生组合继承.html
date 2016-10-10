@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>寄生组合继承</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+	function Grandfather(gName){
+		this.salary=100;
+		this.gName=gName;
+		this.say=function(){
+			console.log("Grandfather:"+this.gName);
+		}
+	}
+
+
+
+	function Person(name,age){
+		this.name=name;
+		this.age=age;
+	}
+
+	// Person.prototype.say=function (){
+	// 	console.log("我叫"+(this.name));
+	// }
+	var grandfather=new Grandfather("gf");
+	Person.prototype=grandfather;
+
+	function Man(name,age){
+		Person.apply(this,arguments);
+
+	}
+	// Man.prototype=new Person(1,1);
+
+	//直接把实例化得对象当成Man的原型 则
+	//   用Man.prototype.constructor=Man会改变grandfather为Man的构造器
+	// Man.prototype=Person.prototype;  
+	// console.log(Man.prototype);
+
+	//把实例化得对象通过create 间接 被当做Man的原型  则
+	//   用Man.prototype.constructor=Man不会改变grandfather的构造器
+	
+	console.log(Man.prototype.constructor.prototype);
+
+
+	
+	Man.prototype=Object.create(Person.prototype);
+	Man.prototype.constructor=Man;
+
+	
+	console.log(Man.prototype);	
+
+	var man1=new Man("dong1",13);
+	var man2=new Man("dong2",14);
+
+	console.log(man1.name); //dong1
+	console.log(man1.name===man2.name); //false
+	console.log(man1.say===man2.say); //true;
+	man1.say();
+	grandfather.gName="gf2";
+	man2.say();	//我叫dong2 
+
+
+
+
+
+</script>
+</body>
+</html>

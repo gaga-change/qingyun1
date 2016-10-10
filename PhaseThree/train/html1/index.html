@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login&&register</title>
+    <style>
+        html{
+            /*position: relative;*/
+            /*height: 100%;*/
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            position: relative;
+            height: 100%;
+        }
+        #content{ 
+            width: 500px;
+            height: 600px;
+            margin:0 auto;
+            text-align: center;
+            color: rgb(76,76,76);
+            position: relative;
+            top:50%;
+            /*margin-top:-300px;*/
+
+        }
+      input{
+          width: 298px;
+          height: 46px;
+          font-size: 15px;
+          padding-left: 10px;
+      }
+        img{
+            margin:40px auto;
+        }
+        h3{
+            margin-bottom:40px;
+        }
+        a{
+            font-size:20px;
+            margin:40px;
+            font-weight: bold;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+        p{
+            margin-bottom: 40px;
+        }
+        #register>div,#login>div{
+            width: 298px;
+            height: 46px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        #login {
+            display: none;
+        }
+        .same{
+            border-radius: 5px;
+        }
+        .same:hover{
+            cursor: pointer;
+        }
+        button{
+            width: 300px;
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <img src="images/zhihu.png" alt="">
+        <h3>与世界分享你的知识、经验和见解</h3>
+        <p><a id="a1" style="color:rgb(6,107,226)">注册</a><a id="a2">登录</a></p>
+        <div id="slide" style="width: 50px;height: 3px;background: rgb(5,110,234);position: relative;top: -35px;left: 167px;"></div>
+        <div id="register">
+            <div>
+                <input type="text" placeholder="姓名">
+            </div>
+            <div>
+                <input type="text" placeholder="手机号(仅支持中国大陆)">
+            </div>
+            <div>
+                <input type="password" placeholder="密码(不少于6位)">
+            </div>
+            <div>
+                <input type="text" placeholder="验证码">
+            </div>
+            <div>
+                <button class="same" style="font-size: 15px;text-align: center;color:white;background: rgb(5,	110,234);margin-top: 30px;" type="text" >注册知乎</button>
+            </div>
+            <div>
+                <button class="same" style="font-size: 15px;text-align: center;color:rgb(76,146,225);margin-top: 100px;background: white" type="text">下载知乎APP</button>
+            </div>
+        </div>
+        <div id="login">
+            <div>
+                <input type="text" placeholder="手机号或邮箱">
+            </div>
+            <div>
+                <input type="text" placeholder="密码">
+            </div>
+            <div>
+                <input type="text" placeholder="验证码">
+            </div>
+            <div>
+                <button class="same" style="font-size: 15px;text-align: center;color:white;background: rgb(5,	110,234);margin-top: 30px;" type="text">登录</button>
+                <div id="img" style="width: 50px;height: 36px;position: relative;top: -150px;left: 230px;"><img style="width: 60px;height: 35px" src="images/yanzheng.gif" alt=""></div>
+            </div>
+            <div style="width:298px;height: 100px;margin-top: 20px">
+                <p><input style="position: relative;left: 0px;top:20px" type="checkbox"><label style="position: relative;top:-10px;left: -70px;">记住我</label><label style="position: relative;top: -10px;left:90px">无法登录?</label></p>
+           <p style="text-align: left;position: relative;top: -20px;">社交账号登录</p>
+            </div>
+            <div>
+                <button class="same" style="font-size: 15px;text-align: center;color:rgb(76,146,225);margin-top: 60px;background: white" type="text">下载知乎APP</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var a1=document.getElementById('a1');
+    var a2=document.getElementById('a2');
+    var register=document.getElementById('register');
+    var login=document.getElementById('login');
+    var slide=document.getElementById('slide');
+    a1.onclick=function () {
+        register.style.display="block";
+        login.style.display="none";
+        slide.style.left="167px";
+        a1.style.color="rgb(5,110,234)";
+        a2.style.color="rgb(59,59,59)";
+    }
+    a2.onclick=function () {
+        register.style.display="none";
+        login.style.display="block";
+        slide.style.left="283px";
+        a2.style.color="rgb(5,110,234)";
+        a1.style.color="rgb(59,59,59)";
+    }
+</script>
+</html>

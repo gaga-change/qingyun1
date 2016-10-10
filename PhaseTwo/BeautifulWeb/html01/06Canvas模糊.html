@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../package/StackBlur.js"></script>
+    <script type="text/javascript" src="../package/rgbaster.js"></script>
+    <title>Canvas</title>
+    <style type="text/css">
+        body{
+            background-color:#2E2E2D ;
+        }
+        .blur {
+            filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+        }
+        :root .blur {
+            display: none; /* IE9+, Firefox, Chrome, Opera - hidden */
+            filter: none; /* no IE9 */
+        }
+        .blur{
+            width:100% ;
+            height:260px;
+        }
+        #myCanvas{
+            background-color: yellow;
+            /*width: important;*/
+            /*height: 260px!important;*/
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+<img src="../img/canvas1.jpg" id="blur" class="blur"  />
+<canvas id="myCanvas"></canvas>
+<br>
+<br>
+<br>
+<canvas id="myCanvas2" width="1000" height="1000"></canvas>
+</body>
+<script type="text/javascript">
+    stackBlurImage( "blur", "myCanvas", 25, true );
+    var c=document.getElementById("myCanvas");
+    var imgSrc=c.toDataURL("image/jpg");
+    var img=new Image();
+    img.src=imgSrc;
+    RGBaster.colors(img, {
+        success: function(payload) {
+            // payload.dominant是主色，RGB形式表示
+            // payload.secondary是次色，RGB形式表示
+            // payload.palette是调色板，含多个主要颜色，数组
+            console.log(payload.dominant);
+            console.log(payload.secondary);
+            console.log(payload.palette);
+            
+//            rgb(240,236,235)
+//            document.getElementsByTagName("body")[0].style.backgroundColor=payload.dominant;
+            document.getElementsByTagName("body")[0].style.backgroundColor=  RGB(payload.palette[0]);
+            RGB(payload.palette[0]);
+        }
+    });
+    function RGB(str) {
+        console.log( typeof str );
+        str=str.split(",");
+        str[0]=str[0].split("(")[1];
+        str[2]=str[2].split(")")[0];
+        console.log( str);
+        str=str.map(function (ele) {
+            if(ele-180<0)return 0;
+            return ele-180;
+        })
+        return "rgb("+str[0]+","+str[1]+","+str[2]+")";
+    }
+
+
+    var c2=document.getElementById("myCanvas2");
+    ctx=c2.getContext("2d");
+    console.log(document.getElementById("myCanvas"));
+//    ctx.scale(2,2);
+    ctx.drawImage(document.getElementById("myCanvas"),300,150,300,150);
+
+
+
+</script>
+</html>

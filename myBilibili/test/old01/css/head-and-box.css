@@ -1,0 +1,152 @@
+/*------头部------*/
+#header{
+	width: 100%;
+	min-width:980px;
+	height: 170px;
+	margin-bottom: 10px;
+	/*background-color: yellow;*/
+	background-image: url(../img/index-1.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% -10px;
+}
+
+/*顶部导航*/
+#header .top-menu{
+	min-width: 980px;
+	height: 42px;
+	/*overflow: hidden;*/
+	/*background-color: red;*/
+	
+
+}
+/*三层*/
+#header .top-menu >div{
+	width: 100%;
+	min-width: 980px;
+	height: 42px;
+	margin: 0px auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+/*真正的内容*/
+#header .top-menu >div:first-child{
+	position: relative;
+	z-index: 99;
+	width: 980px;
+	/*margin: 0px auto;*/
+	/*background-color: red;*/
+} 
+/*加白色透明*/
+#header .top-menu >div:first-child+div{
+	background-color: white;
+	opacity: 0.4;
+	z-index: 9;
+	/*filter:alpha(opacity=40);*/
+}
+/*毛玻璃效果*/
+#header .top-menu >div:first-child+div+div{
+	height: 52px;
+	background-image: url(../img/index-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	top: -10px;
+	z-index: 8;
+	/*-webkit-filter: blur(5px); */
+	padding: 0 20px;
+	filter: blur(5px);
+	left: -20px;
+
+}
+/*两个ul*/
+#header .top-menu ul{
+
+	/*list-style-type: none;*/
+}
+ .top-menu ul a{
+	display: block;
+	line-height: 42px;
+	color: black;
+	padding: 0px 15px;
+	font-size: 13px;
+	text-align: center;
+}
+ .top-menu ul a:hover{
+ 	background-color: rgba(240,240,240,0.5);
+ }
+/*左边导航*/
+ul.left-top-menu{
+}
+ul.left-top-menu>li:first-child>a{
+	background-image: url(../img/icons.png);
+	background-position: -910px -75px;
+	padding-left: 40px;
+}
+ul.left-top-menu>li{
+	float: left;
+}
+/*右边导航*/
+ul.right-top-menu{
+	float: right;
+}
+ul.right-top-menu li{
+	float: left;
+}
+
+ul.right-top-menu #menu-last a{
+	background-image: url("../img/index-top-2.png");
+	width: 58px;
+	height: 48px;
+	/*position: absolute;*/
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-size: 14px;
+	/*letter-spacing: 5px;*/
+	text-align: center;
+}
+ul.right-top-menu #menu-last a:hover{
+	background-image: url("../img/index-top-1.png");
+	background-color: rgba(0,0,0,0);
+}
+#header .middle{
+	width: 980px;
+	height: 128px;
+	margin: 0px auto;
+	position: relative;
+}
+/*图标*/
+#header .middle .log{
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+}
+#header .middle .log a{
+	width: 220px;
+	height: 105px;
+	display: block;
+	background-image: url(../img/inde-log.png);
+}
+/*查询*/
+#header .middle .search{
+
+}
+
+#menuer,#wrapper{
+	width: 980px;
+	height: 900px;
+	margin: 20px auto;
+	background-color: AliceBlue;
+
+}
+#menuer{
+	
+}
+#wrapper{
+
+}
+#footer{
+
+}

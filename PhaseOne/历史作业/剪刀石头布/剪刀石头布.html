@@ -1,0 +1,160 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>剪刀石头布</title>
+	<style type="text/css">
+		body{font: 14px Helvetica,Arial,sans-serif;font-size: 14px;}
+		*{padding:0;margin:0;}
+		#showMessage{
+			max-height: 200px;
+			overflow: hidden;
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			color: Seagreen;
+		}
+		#wrapper{
+			width: 600px;
+			margin:20px auto;
+			background-color: Aliceblue;
+			text-align: center;
+
+		}
+		#wrapper input{
+			width: 100px;
+		}
+		#wrapper .top{
+			padding-top: 20px;
+		}
+		#wrapper .middle{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		#msgTable{
+			width: 600px;
+			border-collapse: collapse;
+		}
+
+		.msg_table  th{
+			background-color:YellowGreen; 
+		}
+		.msg_table  td{
+			background-color: Thistle;
+		}
+		.msg_table th,.msg_table td{
+			/*width: 120px;*/
+			text-align: left;
+			padding-left: 10px;
+			/*word-wrap:break-word; */
+			word-break:break-all;
+			overflow:hidden;
+		}
+		.msg_table  tr th:first-child+th,
+		.msg_table  tr th:first-child+th+th+th
+		{
+			background-color: Violet  ;
+		}
+		.msg_table  tr td:first-child+td,
+		.msg_table  tr td:first-child+td+td+td
+		{
+			background-color: Silver ;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="top">
+			<!-- <input id="me_in" type="text" > -->
+			<input id="scissors" type="button" title="1" value="剪刀" onclick="getWin(this)"> 
+			<input id="stone" type="button" title="2" value="石头" onclick="getWin(this)" >
+			<input id="cloth" type="button" title="3" value="布" onclick="getWin(this)">
+			<!-- <input type="button" value="点" onclick="getWin()"> -->
+		</div>
+		<div class="middle">
+			<div id=""><span>你的选择的是:</span><span id="youChoose"></span></div>
+			<div id=""><span>电脑选择的是:</span><span id="iChoose"></span></div>
+			<div id=""><span>此次较量结果:</span><span id="result"></span></div>
+		</div>
+		<table id="msgTable" class="msg_table">
+			<tr>
+				<th width="150px">日期</th>
+				<th width="150px">时间</th>
+				<th width="150px">打赢花费的次数</th>
+				<th >操作</th>
+			</tr>
+		</table>
+		<div id="showMessage"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	number=0;
+	function getWin(id){
+		number++;
+		var show=new Array("剪刀","石头","布");
+		// var num1=parseInt(document.getElementById("me_in").value);
+		var num1=parseInt(id.title);
+		var num2=Math.ceil(Math.random()*3);   
+		var showMessageEle=document.getElementById("showMessage"); 
+	
+		//进行输赢比较
+		var result="";
+		num2=3*(num2-1)+1;
+		switch(num1+num2){
+			case 2:
+			case 6:
+			case 10:
+				console.log("平");
+				result="平局";
+				break;
+			case 9:
+			case 4:
+			case 5:
+				console.log("输了");
+				result="输了";
+				break
+			case 7:
+			case 8:
+			case 3:
+				console.log("赢了");
+				
+				showTable();
+				result="赢了";
+				break
+			default:
+				console.log("fd");
+		}
+		//左下角显示信息
+		var message="computer:"+show[(num2-1)/3]+"  you:"+id.value+" "+result;
+		console.log(message); 
+		showMessage(showMessageEle,message);
+		//中间内容显示当前信息
+		document.getElementById("youChoose").innerHTML=id.value;
+		document.getElementById("iChoose").innerHTML=show[(num2-1)/3];
+		document.getElementById("result").innerHTML=result;
+	}
+	function showTable(){
+		console.log("number:"+number);
+		var newTr=document.createElement("tr");
+		var myDate=new Date();
+		newTr.innerHTML="<td>"+myDate.toLocaleDateString()+"</td><td>"+myDate.toLocaleTimeString()+"</td><td>"+number+"</td><td><input type='button' onclick='delMsg(this)' value='删除' /></td>";
+		document.getElementById("msgTable").appendChild(newTr);
+		number=0;
+	}
+	//左下角显示提示
+	function showMessage(id,message){
+		var newP=document.createElement("p");
+		newP.innerHTML=message;                                                             
+		id.appendChild(newP); 
+
+		var ps=id.getElementsByTagName("p");
+		if(ps.length>6){
+			id.removeChild(ps[0]);
+		}
+	}
+	function delMsg(id){
+		id.parentNode.parentNode.remove();
+	}
+</script>
+</html>

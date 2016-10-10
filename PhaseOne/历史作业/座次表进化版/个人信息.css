@@ -1,0 +1,8 @@
+body，td,th,div{padding: 0 0 0 0;margin: 0 0 0 0;}
+body{font-family: "娃娃体-简";font-size: 30px;background-color: DarkGray; }
+td{font-size: 30px;color:#7CFC00;}
+th{font-size: 30px;}
+div{}
+table{}
+#all{width: 1000px;height: 900px;background-image: url(4.jpg);margin-left: auto;margin-right: auto;}
+#name_id{font-size: 50px;text-align: center;}

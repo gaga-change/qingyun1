@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>利用构造函数继承</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	function Person(name,age){
+		this.name=name;
+		this.age=age;
+	}
+
+	Person.prototype.say=function (){
+		console.log("我叫"+(this.name));
+	}
+
+	function Man(name,age){
+		Person.apply(this,arguments);
+
+	}
+
+	var man1=new Man("dong1",13);
+	var man2=new Man("dong2",14);
+
+	console.log(man1.name==man2.name); //false
+	man1.say();	//not a function
+
+
+
+
+
+</script>
+</body>
+</html>

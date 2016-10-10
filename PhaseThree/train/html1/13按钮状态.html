@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../package/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="../package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../package/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="../package/dong.js"></script>-->
+    <title>title</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+    Loading state
+</button>
+
+<script>
+    $('#myButton').on('click', function () {
+        var $btn = $(this).button('loading')
+       setTimeout(function () {
+           $btn.button('reset')
+       },3000)
+    })
+</script>
+
+</body>
+<script type="text/javascript">
+
+</script>
+</html>

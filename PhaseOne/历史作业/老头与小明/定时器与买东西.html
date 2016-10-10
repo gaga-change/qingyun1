@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>定时器与买东西</title>
+	<link rel="stylesheet" type="text/css" href="beauty.css">
+</head>
+<body onload="load();beautyInit()" >
+<div id="wrapper" class="">
+	<h1>老头定时让小明买东西</h1>
+	<div id="show_time_top">
+		<div id="" class="full_year">
+			<h2>当前日期</h2>
+			<span id="show_now_year">1970</span><span>:</span><span id="show_now_month">1</span><span>:</span><span id="show_now_day">1</span>
+		</div>
+		<div id="" class="funn_hour">
+			<h2>当前时间</h2>
+			<span id="show_now_hour">00</span><span>:</span><span id="show_now_minute">00</span><span>:</span><span id="show_now_second">00</span>
+		</div>
+	</div>
+
+	<div id="set_single_value" class="">
+		<h2 style="margin-bottom:10px;">请设置当前物价</h2>
+		<label><span>肉：</span><input id="set_meat_value" type="text">（斤/元）</label>
+		<label><span>水：</span><input id="set_weater_value" type="text">（瓶/元）</label>
+		<label><span>酒：</span><input id="set_wine_value" type="text">（瓶/元）</label>
+		<div><input type="button" value="确定" onclick="setButton()"></div>
+		<!-- <span>请设置市场价</span> -->
+	</div>
+	<div id="show_single_value">	
+		<h2>当前物价</h2>
+		<span id="show_meat_value">肉：1元/斤</span>
+		<span id="show_weater_value">水：1元/瓶</span>
+		<span id="show_wine_value">酒：1元/瓶</span>
+		<input type="button" value="修改" onclick="moidifyButton()">
+	</div>
+	<div id="set_time_all"  class="">
+		<h2>设置定时时间</h2>
+		<label><span >年:</span><select id="select_year" onchange="showSelect()"></select></label>
+		<label><span >月:</span><select id="select_mon" onchange="showSelect()"></select></label>
+		<label><span >日:</span><select id="select_day" onchange=""></select></label>
+		<label><span >时:</span><select id="select_hour" onchange=""></select></label>
+		<label><span >分:</span><select id="select_minute" onchange=""></select></label>
+	</div>
+	<div id="set_money_and_num" class="">
+		<h2>给小明的钱</h2>
+		<label><span>钱:</span><input id="set_money" type="text"><span>（单位：￥人民币）</span></label>
+
+		<label><span>肉:</span><input id="meat_num" type="text"> 斤</label>
+		<label><span>水:</span><input id="weater_num" type="text"> 瓶</label>
+		<label><span>酒:</span><input id="wine_num" type="text"> 瓶</label>
+		<input id="last_button" type="button" onclick="addEvent()" value="确定">
+	</div>
+	<div id="show_message_all" class="">
+		<table id="show_message_table">
+			<tr>
+				<th width="120px">下令的时间</th>
+				<th width="120px">购买的时间</th>
+				<th width="100px">给的钱 ￥</th>
+				<th width="80px">肉（斤）</th>
+				<th width="80px">水（瓶）</th>
+				<th width="80px">酒（瓶）</th>
+				<th>结果</th>
+				<th width="100px">操作</th>
+			</tr>
+		</table>
+	</div>
+	<span id="show_date_err"></span>
+	<span id="show_money_err"></span>
+</div>
+<script src="beauty.js"></script>
+<script src="select.js"></script>
+<script src="event.js"></script>
+</body>
+</html>

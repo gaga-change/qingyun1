@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>retrun 在类中使用</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	// function Person(name,age){
+	// 	this.name=name;
+	// 	this.age=age;
+	// }
+
+
+	// function c (){
+	// 	this.some = "xxx";
+	// }
+
+	// function d (){
+	// 	this.some1 = "yyyy";
+	// }
+
+	// function e (){
+	// 	this.some2 = "eeeer";
+	// }
+
+	// d.prototype = new c();
+	// e.prototype = new c();
+
+
+
+	var a = {
+			temp:14
+		};
+
+	function Man1(temp){
+		return a;
+	}
+	function Man1(temp){
+		retrun={
+			temp:temp;
+		}
+	}
+	function Man2(temp){
+		this.temp=temp;
+	}
+	// function Man3(temp){
+
+	// }
+	// var person=new Person("dong",21);
+
+
+	var man1=new Man1("temp");
+	// console.log(man1.temp);
+	console.log(man1.constructor);// function Object()
+	console.log(a.constructor);//function Object()
+	// console.log(man1);
+
+
+
+	// var man2=new Man2("temp2");
+	// console.log(man2.constructor);//function Man2()
+	// console.log(man2);
+
+	// var man3=new Man3("temp2");
+	// console.log(man3.constructor);//function Man2()
+
+
+
+	// console.log(man);
+
+
+
+
+
+</script>
+</body>
+</html>

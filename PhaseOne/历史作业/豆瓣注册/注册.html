@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" >	
+	<title>豆瓣注册</title>
+	<link rel="stylesheet" type="text/css" href="css/regist.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+	<div id="header">
+		<img src="img/lg_account.png">
+	</div>
+	<div id="wrapper">
+		<h1>欢迎加入豆瓣</h1>
+		<div id="" class="left_all">
+			<form>
+				 <div id="" class="top_login">
+				 	<div id="" class="">
+				 		<span>用户名</span>
+				 		<input id="user_name" class="" type="text" onblur="showMessage(this)"><span id="msg_username" style="visibility:hidden " >用户名不能为空</span>
+				 	</div>
+				 	<div id="" class="">
+				 		<span>密码</span>
+				 		<input id="password_one" class="" type="password" onblur="showMessage(this)" ><span style="visibility:hidden ">密码不能为空</span>
+				 	</div>
+				 	<div id="" class="">
+				 		<span>确认密码</span>
+				 		<input id="password_two" class="" type="password" onblur="showMessage(this)" ><span id="" style="visibility: hidden">两次输入密码不一致</span>
+				 	</div>
+				 	<div id="" class="">
+				 		<span>身份证</span>
+				 		<input id="body_card" class="" type="text" onblur="showMessage(this)" ><span style="visibility:hidden ">身份证不能为空</span>
+				 	</div>
+				 	<div id="" class="">
+				 		<span>简介</span>
+				 		<input id="short_say" class="" type="text" onblur="showMessage(this)" ><span style="visibility: hidden">简介不能为空</span>
+				 	</div>
+				 	<div id="" class="verification">
+				 		<span>验证码</span>
+				 		<input id="my_verification" class="" type="text"  ><input type="button" value="获取验证码" onclick="getVerification()"><span style="visibility:hidden ">验证码不能为空</span>
+				 	</div>
+				 </div>
+			
+				<div id="" class="bottom_submit">
+				 	<label>
+				 		<input id="read_use_msg" type="checkBox"><span>我已经认真阅读并同意豆瓣的《<a href="">使用协议</a>》</span>
+				 	</label>	
+				 	<p>
+				 		<input type="button" value="注册" onclick="addTableTr()">
+				 		<input type="reset" value="重置">
+				 	</p>
+				</div>
+			</form>
+		</div>
+		<div id="" class="right_a">
+			<p>&gt已经拥有豆瓣账号?<a href="">直接登入</a></p>
+			<p>&gt<a href="">点击下载豆瓣移动应用</a></p>
+		</div>
+		<div class="bottom_table">
+			<table id="message_table" >
+				<tr>
+					<th width="120px">日期</th>
+					<th width="120px">用户名</th>
+					<th width="120px">密码</th>
+					<th width="120px">身份证</th>
+					<th width="120px">生日</th>
+					<th width="120px">简介</th>
+					<th>操作</th>
+				</tr>
+			</table>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div id="footer"></div>
+</body>
+<script src="js/regist.js"></script>
+</html>

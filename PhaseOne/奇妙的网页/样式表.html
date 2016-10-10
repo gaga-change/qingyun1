@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>样式表</title>
+	<!-- <link id="a" rel="stylesheet" type="text/css" href="a.css"> -->
+	<style id="a" type="text/css">
+		div{width: 100px;height: 100px;background-color: red;}
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+<script type="text/javascript">
+	var sheets=document.styleSheets;
+	// var temp=new Array(1,2,3);
+	// temp.map(function(a){
+	// 	console.log(a);
+	// });
+	for(var i=0 ;i<sheets.length;i++){
+		// console.log(sheets[i]);
+	}
+	var a=document.querySelector("#a");
+	// console.log(a);
+	a=document.getElementById("a");
+	// console.log(a);
+	// console.log(a.getAttribute("id"));
+	var mySheet= a.sheet;
+	// console.log(mySheet);
+	var myRule=mySheet.cssRules;
+	// console.log(myRule);
+	var myDivRule=myRule[0];
+	// console.log(myDivRule);
+	var myWidth=myDivRule.style.width;
+	// console.log(myWidth);
+
+	// console.log(document.styleSheets[0].cssRules[0].style.width);
+
+	// console.log(document.querySelector("#a").sheet.cssRules[0].style.width);
+
+	console.log(document.getElementById("a").sheet.cssRules[0].style.width);
+
+
+
+</script>
+</html>

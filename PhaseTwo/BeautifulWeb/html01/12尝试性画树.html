@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱情</title>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-3.1.0.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #my_canvas{
+            background-color: #383838;
+            /*background-color: #aa5123;*/
+        }
+        #svg {
+            background-color: #383838;
+            position: absolute;
+            top:0px;
+            left: 0px;
+        }
+        #svg_text{
+            background-color: rgba(255,255,255,0);
+            position: absolute;
+            top:300px;
+            right: 0px;
+            display: none;
+            color: #aa5123;
+        }
+        #wrapper{
+            width: 800px;
+            height: 800px;
+            margin: 20px auto;
+            position: relative;
+            box-shadow: 2px 10px 10px #2e221b;
+            background-color: AliceBlue;
+        }
+        #pep1{
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+        }
+        #pep2{
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+<canvas id='my_canvas' width="800" height="800" ></canvas>
+<svg id="svg" width="800" height="200">
+    <g id="moon">
+        <defs>
+            <mask id="mask-moon">
+                <circle r="50" cx="700" cy="100" fill="white" />
+                <circle r="50" cx="675" cy="120" fill="black" />
+            </mask>
+        </defs>
+        <circle r="50" cx="700" cy="100" fill="AliceBlue" mask="url(#mask-moon)"  />
+    </g>
+    <g id="star-group"></g>
+    <defs>
+        <polygon id="star" points="0 -10 2 -2 10 0 2 2 0 10 -2 2 -10 0 -2 -2" fill="white"/>
+    </defs>
+</svg>
+    <svg id="svg_text" width="200" height="300">
+        <defs>
+            <path id="p1" d="M 0 20  L100,40 " fi ll="none" stroke="blue"
+                  stroke-width="3"/>
+        </defs>
+        <text>
+            <textPath xlink:href="#p1" style="color: #aa5123">
+                两情若是久长时
+            </textPath>
+        </text>
+        <defs>
+            <path id="p2" d="M 0 60  L100,80 " fill="none" stroke="blue"
+                  stroke-width="3"/>
+        </defs>
+        <text>
+            <textPath xlink:href="#p2">
+                又岂在朝朝暮暮
+            </textPath>
+        </text>
+        <defs>
+            <path id="p3" d="M 0 100  L200 140 " fill="none" stroke="blue"
+                  stroke-width="3"/>
+        </defs>
+        <text>
+            <textPath xlink:href="#p3">
+                ----秦观《鹊桥仙·纤云弄巧》
+            </textPath>
+        </text>
+    </svg>
+    <!--人一-->
+    <svg id="pep1" width="100" height="170">
+        <g>
+            <circle cx="50" cy="45" r="25" stroke="green" fill="none" stroke-width="5"></circle>
+            <polyline points="0,120 50,70 100,120" stroke="green" fill="none" stroke-width="5"></polyline>
+            <line x1="25" y1="95" x2="25" y2="170"  stroke="green" fill="none" stroke-width="5"></line>
+            <line x1="75" y1="95" x2="75" y2="170"  stroke="green" fill="none" stroke-width="5"></line>
+        </g>
+    </svg>
+    <!--人二-->
+    <svg id="pep2" width="100" height="170">
+        <g>
+            <circle cx="50" cy="45" r="25" stroke="Pink" fill="none" stroke-width="5"></circle>
+            <polyline points="0,120 50,70 100,120" stroke="Pink" fill="none" stroke-width="5"></polyline>
+            <line x1="25" y1="95" x2="25" y2="170"  stroke="Pink" fill="none" stroke-width="5"></line>
+            <line x1="75" y1="95" x2="75" y2="170"  stroke="Pink" fill="none" stroke-width="5"></line>
+        </g>
+    </svg>
+</div>
+</body>
+<script>
+
+    $("#svg_text").fadeToggle("slow");
+</script>
+<script>
+    var myCanvas = document.getElementById("my_canvas");
+    var ctx = myCanvas.getContext("2d");
+
+    var temp=Math.PI/2;
+    temp=temp-Math.PI/4;
+    var ran = Math.random();
+    console.log("temp"+(temp+Math.PI/2*ran)/Math.PI)
+    drawTree(ctx, 400, 780, Math.PI * 0.5, 100, 8, 12)
+    function drawTree(ctx, startX, startY, angle, length, width, depth) {
+        if(depth==3)length=60;
+        if (depth < 0)return;
+        if (startY>680&&depth<8)return;
+        depth--;
+        var ran = Math.random();
+        var endX, endY;
+        endX = startX + length * Math.cos(angle);
+        endY = startY - length * Math.sin(angle);
+        ctx.beginPath();
+        ctx.lineCap = "round";
+        ctx.moveTo(startX, startY);
+        ctx.lineTo(endX, endY);
+        ctx.lineWidth = width;
+        if(depth>2){
+            ctx.strokeStyle= '#aa965a';
+        }else if(depth==1){
+            ctx.strokeStyle= 'purple';
+        } else {
+            ctx.strokeStyle= 'DeepPink';
+        }
+        ctx.stroke();
+        if(depth>0){
+            setTimeout(function () {
+                drawTree(ctx, endX, endY,angle-Math.PI/4+Math.PI/2*ran, length/2+length/2*ran, width * 0.5, depth);
+            },100);
+            setTimeout(function () {
+                drawTree(ctx, endX, endY,angle-Math.PI/4+Math.PI/2*ran, length/2+length/2*ran, width * 0.5, depth);
+            },100);
+        }
+        drawTree(ctx, endX, endY,angle-Math.PI/4+Math.PI/2*ran, length/2+length/2*ran, width * 0.5, depth);
+
+    }
+    function con(a, b) {
+        console.log(a + ":" + b);
+    }
+
+    //星星
+    var SVG_NS = 'http://www.w3.org/2000/svg';
+    var XLINK_NS = 'http://www.w3.org/1999/xlink';
+    var starCount = 100;
+    renderStar();
+    function renderStar() {
+        var starRef = document.querySelector('#star');
+        var starGroup = document.querySelector('#star-group');
+        while (starCount--) {
+            console.log("f")
+            star = use(starRef);
+            star.setAttribute('transform', 'translate(' +random(0,800)  + ',' + random(200,0) + ')' + 'scale(' + random(0.1, 0.8) + ')');
+            star.setAttribute('opacity', random(0.1, 0.7))
+            starGroup.appendChild(star)
+        }
+    }
+    function use(origon) {
+        var _use = document.createElementNS(SVG_NS, 'use');
+        _use.setAttributeNS(XLINK_NS, 'xlink:href', '#' + origon.id);
+        return _use;
+    }
+    //大小数之间的随机
+    function random(min, max) {
+        return min + (max - min) * Math.random();
+    }
+
+    //两个人向靠近
+    var pep1=$("#pep1");
+    var pep2=$("#pep2");
+    setTimeout(function () {
+        pep1.animate({
+            "left":"300px"
+        },"slow")
+        pep2.animate({
+            "right":"300px"
+        },"slow")
+    },8000);
+    setTimeout(function () {
+        pep1.animate({
+            "left":"350px"
+        },"slow")
+        pep2.animate({
+            "right":"350px"
+        },"slow")
+    },6000);
+</script>
+</html>

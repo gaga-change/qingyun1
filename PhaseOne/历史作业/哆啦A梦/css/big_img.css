@@ -1,0 +1,90 @@
+/*------内容-全部------*/
+#wrapper{
+	width: 950px;
+	min-height: 420px;
+	margin: 20px auto;
+	background-color: Aliceblue;
+	overflow: hidden;
+}
+#wrapper h1{
+	font-size: 25px;
+	color: #494949;
+}
+/*左边*/
+#wrapper .left{
+	width: 590px;
+	padding-top: 20px;
+	float: left;
+	/*background-color: white;*/
+}
+/*上下翻页*/
+#wrapper .left .up_down_page{
+	overflow: hidden;
+	text-align: center;
+}
+#wrapper .left .up_down_page>span:first-child{
+	float: left;
+}
+#wrapper .left .up_down_page>span:first-child+span{
+
+}
+#wrapper .left .up_down_page>span:first-child+span>a{
+	cursor: pointer;
+}
+#wrapper .left .up_down_page>span:first-child+span+span{
+	float: right;
+}
+
+
+#wrapper .left .show_img{
+	width: 590px;
+	min-height: 600px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+#wrapper .left .show_img img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#wrapper .left .show_del_button{
+	margin-top: 20px;
+	/*background-color: red;*/
+	text-align: center;
+	padding-bottom: 20px;
+}
+#wrapper .left .show_del_button input[type="button"]{
+	padding: 4px 6px;
+	border-radius: 3px;
+}
+#wrapper .left .show_del_button input[type="button"]:hover{
+	background-color: gray;
+	border-radius: 3px;
+}
+/*上下翻页*/
+#wrapper .up_down_page{
+	font-size: 12px;
+	color:#37a;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted gray;
+}
+/*右边*/
+#wrapper .right{
+	width: 310px;
+	margin-top: 30px;
+	float: right;
+	/*background-color: yellow;*/
+}
+#wrapper .right>p{
+	margin-bottom: 10px;
+
+}#wrapper .right>ul li{
+	width: 100px;
+	height: 30px;
+	display:block;
+	line-height: 30px;
+	border-bottom: 1px dotted gray;
+}
+#wrapper .right>ul a{
+	font-size: 12px;
+}

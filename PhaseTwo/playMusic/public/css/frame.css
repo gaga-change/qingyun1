@@ -1,0 +1,46 @@
+
+.body{
+    width: 100%;
+}
+.body>div{
+    width:100%;
+    margin:10px 0;
+}
+#header{
+    min-width: 900px;
+    height: 55px;
+    line-height: 55px;
+    /*background-color: #2E2E2D;*/
+}
+#wrapper{
+    width: 894px;
+    height: 100%;
+    margin-left:auto ;
+    margin-right:auto;
+    margin-top: 40px;
+    /*background-color: ;*/
+    overflow: hidden;
+
+}
+#wrapper #section{
+    width: 618px ;
+
+    float: left;
+}
+#wrapper #aside{
+    width: 208px ;
+    min-height: 309px;
+    /*background-color: indianred;*/
+    float: right;
+    position: relative;
+}
+
+#footer{
+    height: 291px;
+    position: relative;
+    overflow: hidden;
+    /*background-color: yellowgreen;*/
+    /*background-image: url("../img/mh1.png");*/
+}
+
+

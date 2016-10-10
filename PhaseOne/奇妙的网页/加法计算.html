@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>加法计算</title>
+</head>
+<body>
+	<form>
+		<input id="num1" type="text" name="a1" >
+		+
+		<input id="num2" type="text" name="a2" >
+		=
+		<input id="num3" type="text" name="a3"/>
+		<input type="button" value="计算" onclick="sum()">
+	</form>
+	<script type="text/javascript">
+		
+		function sum(){
+			var a1,a2,a3;
+			a1=Number(document.getElementById("num1").value);
+			a2=Number(document.getElementById("num2").value);
+			a3=String(a1+a2);
+			document.getElementById("num3").value=a3;
+			return a1+a2;
+		}
+	</script>
+</body>
+</html>

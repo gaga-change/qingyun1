@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    /*font-family: "STSong", Arial, sans-serif;*/
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /*color: #333;*/
+    color: #222;
+}
+img, input, button, select {
+    border: none;
+    vertical-align: middle;
+}
+ul {
+    list-style-type: none;
+}
+/*input, select, textarea, button {*/
+    /*outline: none;*/
+/*}*/
+
+
+
+/*h1, h2, h3, h4, h5, h6, input, button {*/
+    /*font-size: 100%;*/
+/*}*/
+

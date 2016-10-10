@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    /*font-family: "STSong", Arial, sans-serif;*/
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    /*color: #333;*/
+    color: #222;
+}
+
+input, select, textarea, button {
+    outline: none;
+}
+
+img, input, button, select {
+    border: none;
+    vertical-align: middle;
+}
+
+/*h1, h2, h3, h4, h5, h6, input, button {*/
+    /*font-size: 100%;*/
+/*}*/
+
+ul {
+    list-style-type: none;
+}
+small{
+    /*font-weight: 200;*/
+    color: gray;;
+}
+em{
+    font-family: "STKaiti";
+    color: darkgray;
+}

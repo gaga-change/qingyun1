@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="package/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/data.js"></script>
+    <script src="package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="package/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="package/dong.js"></script>-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>哔哩哔哩视频网</title>
+</head>
+<body>
+
+<div class="container">
+    <!--头部 导航-->
+    <div id="header" class="row">
+        <!--背景图片-->
+        <div class="bg">
+            <div class="bg-img"></div>
+            <div class="bg-blur">
+                <div class="bg-blur-size"></div>
+            </div>
+        </div>
+        <!--导航-->
+        <div id="top_nav" class="row change_size center-block ">
+            <ul class="nav nav-pills pull-left" style="border: none">
+                <li><a href="#">主站</a></li>
+                <li><a href="#">画友</a></li>
+                <li><a href="#">游戏中心</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">周边</a></li>
+                <li><a href="#">BML</a></li>
+            </ul>
+            <!--背景图片的附加-->
+            <div class="bg-log"></div>
+            <!--查询-->
+            <div class="search">
+                <form action="#" class="form-inline" role="form">
+                    <div class="form-group">
+                        <button type="button" class="form-control " >
+                            <img src="img/frame/rank.png" alt="">
+                            排行榜
+                        </button>
+                    </div>
+                    <div class="form-group input-group">
+                        <input class="form-control" placeholder="随便搜搜" type="text" title="">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default " type="button" title="" style="padding: 2px">
+                                <img class="img-rounded"  src="img/frame/search.png" height="28" alt="">
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <!--菜单行-->
+    <div id="menu_nav" class=" row change_size center-block">
+        <ul class="nav nav-tabs" style="border: none;">
+            <li><a href="#"><img class="text-center center-block" src="img/frame/house.png" width="20" alt="">首页</a></li>
+            <li><a href="#"><span class="badge">999</span><br>动画</a></li>
+            <li><a href="#"><span class="badge">20</span><br>番剧</a></li>
+            <li><a href="#"><span class="badge">21</span><br>音乐</a></li>
+            <li><a href="#"><span class="badge">22</span><br>舞蹈</a></li>
+            <li><a href="#"><span class="badge">23</span><br>游戏</a></li>
+            <li><a href="#"><span class="badge">24</span><br>科技</a></li>
+            <li><a href="#"><span class="badge">25</span><br>生活</a></li>
+            <li><a href="#"><span class="badge">26</span><br>鬼畜</a></li>
+            <li><a href="#"><span class="badge">27</span><br>时尚</a></li>
+            <li><a href="#"><span class="badge">28</span><br>广告</a></li>
+            <li><a href="#"><span class="badge">29</span><br>娱乐</a></li>
+            <li><a href="#"><span class="badge">20</span><br>影视</a></li>
+        </ul>
+    </div>
+    <!--内容-->
+    <div id="wrapper" class="row change_size center-block">
+        <!--轮播效果-->
+        <div class="row">
+            <!--左边-->
+            <div id="myCarousel2" class="carousel slide pull-left" style="width:440px;">
+                <!--轮播指标-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel2" data-slide-to="1"></li>
+                    <li data-target="#myCarousel2" data-slide-to="2"></li>
+                </ol>
+                <!--轮播项目-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/index/carousel_one.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/index/carousel_two.jpg">
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="img/index/carousel_three.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel2"
+                   data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel2"
+                   data-slide="next">&rsaquo;</a>
+            </div>
+            <!--右边-->
+            <div id="myCarousel" class="carousel slide pull-right change_in_720">
+                <!--轮播指标-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!--轮播项目-->
+                <div class="carousel-inner">
+                    <div class="item active ">
+                        <ul class="nav in_carousel_one" style="width: 720px">
+
+                        </ul>
+                    </div>
+                    <div class="item  ">
+                        <ul class="nav in_carousel_two" style="width: 720px">
+
+                        </ul>
+                    </div>
+                    <div class="item ">
+                        <ul class="nav in_carousel_three" style="width: 720px">
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel"
+                   data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel"
+                   data-slide="next">&rsaquo;</a>
+            </div>
+
+        </div>
+        <!--推广-->
+        <div class="row">
+            <div class="pull-left">
+                <div class="top">
+                    <h3>推广</h3>
+                    <span class="text-muted"><a href="#"></a></span>
+                    <span class="text-muted"><a href="#"></a></span>
+                </div>
+                <div class="change_in_900">
+                    <ul class="nav popularize in_push_one" style="width: 900px">
+                    </ul>
+                </div>
+            </div>
+            <div class="pull-right">
+                <div class="top" style="height:56px;">
+
+                </div>
+                <div>
+                    <img src="img/index/2233.png">
+                </div>
+            </div>
+        </div>
+        <!--广告1-->
+        <div class="row ">
+            <img src="img/index/u1lJ.jpg" class="change_size" alt="" >
+        </div>
+        <!--14 、1-->
+        <!--MAD创作大赛2016-->
+        <div class="row">
+            <div class="pull-left">
+                <div class="top">
+                    <h2>MAD创作大赛2016</h2>
+                </div>
+                <div class="change_in_900">
+                    <ul class="nav popularize in_push_one" style="width: 900px">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="pull-right wrapper-right" style="margin-top: 63px">
+                <img src="img/index/mad.jpg">
+            </div>
+        </div>
+        <!--14 、2-->
+        <div class="row">
+            <div class="pull-left">
+                <div class="top">
+                    <h2>科技</h2>
+                </div>
+                <div class="change_in_900">
+                    <ul class="nav popularize in_push_one" style="width: 900px">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="pull-right wrapper-right" style="margin-top: 63px">
+                <img src="img/index/mad.jpg">
+            </div>
+
+        </div>
+        <!--广告2-->
+        <div class="row"></div>
+        <!--14 、3~14-->
+        <!--特别推荐-->
+        <div class="row"></div>
+        <!--脚-->
+        <div class="row"></div>
+
+    </div>
+    <script>
+    </script>
+</div>
+</body>
+</html>

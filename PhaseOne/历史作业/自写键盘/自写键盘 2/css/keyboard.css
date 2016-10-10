@@ -1,0 +1,56 @@
+#wrapper{
+	width: 800px;
+	height: 500px;
+	padding-top: 30px;
+	margin:30px auto;
+	background-color: AliceBlue;
+}
+#wrapper >div{
+	width: 400px;
+	margin: 0px auto;
+}
+textarea{
+	width: 380px;
+	padding: 5px 10px;
+}
+h2{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#show_key{
+	margin-top: 10px;
+	width: 400px;
+	/*background-color: yellow;*/
+	overflow: hidden;	
+}
+/*选择列表*/
+#show_key ul{
+	float: left;
+	width: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+#show_key ul>li{
+	/*background-color: red;*/
+}
+#show_key ul>li a{
+	display: block;
+	/*border: 1px dotted gray;*/
+}
+#show_key ul>li a:hover{
+	background-color: aqua !important;
+	/*border: 1px solid gray;*/
+}
+/*显示按键的div*/
+#show_but{
+	width: 360px;
+	float: left;
+	/*background-color: green;*/
+	text-align: center;
+}
+#show_but input{
+	padding: 4px 5px;
+}
+#show_but input:hover{
+	background-color: aqua;
+}

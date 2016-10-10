@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>强大的with</title>
+</head>
+<body>
+	<form action="事件.html" onsubmit="return checkForm(this)" onreset="return resetCheck(this)" method="post" >
+		<input type="text" name="username" >
+		<input type="submit" >
+		<input type="reset">
+	</form>
+
+</body>
+<script type="text/javascript">
+	function resetCheck(id){
+		return false;
+	}
+
+	function checkForm (id) {
+
+	// 	var str="Welcome to Microsoft! ";
+	// str=str + "We are proud to announce that Microsoft has ";
+	// str=str + "one of the largest Web Developers sites in the world.";
+	// document.write(str.replace(/Microsoft/g, "W3School"));
+
+		with(id){
+			var patt=new RegExp("青云","g");
+			var result;
+			// while((result=patt.exec(username.value))!=null){
+			// 	console.log(result);
+			// 	console.log(patt.lastIndex);
+			// }
+			// var temp=username.value.replace(/\w/g,"**")
+			var temp=username.value.replace(/\s/g,"")
+			console.log("fdsa:"+temp);
+			username.focus();
+		}
+		return false;
+	}
+</script>
+</html>

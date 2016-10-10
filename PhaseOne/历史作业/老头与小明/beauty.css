@@ -1,0 +1,195 @@
+*{margin: 0;padding: 0}
+body{font: 14px Helvetica,Arial,sans-serif;font-size: 14px;color:#333;}
+input{outline: none;border:none;}
+select{
+
+}
+input[type="text"]{
+	height: 20px;
+	width: 70px;
+	border:1px solid #c3c8cd;
+	border-radius: 5px;
+}
+input[type="button"]{
+	width: 50px;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 12px;
+	border: 1px solid #c3c8cd;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px #888888;
+	background-color: Aliceblue;
+}
+input[type="button"]:hover{
+	background-color: aqua;
+}
+#wrapper{
+	width: 900px;
+	padding:20px 5px 5px;
+	margin: 20px auto;
+	position: relative;
+	background-color: Aliceblue;
+	
+}
+#wrapper h1{
+	text-align: center;
+	margin-bottom:20px;
+}
+/*------顶部显示当前时间------*/
+div#show_time_top{
+	text-align: center;
+	line-height: 30px;
+}
+#show_time_top span{
+	font-size: 20px;
+	color: green;
+}
+/*-------设置当前物价------*/
+div#set_single_value{
+	text-align: center;
+	margin-top: 20px;
+	
+
+}
+#set_single_value label{
+	margin-left: 20px;
+}
+#set_single_value input[type="button"]{
+	/*margin-top: 10px;*/
+	/*background-color: red;*/
+
+}
+/*------当前物价------*/
+#show_single_value {
+	text-align: center;
+	/*background-color: red;*/
+
+}
+#show_single_value span{
+	height: 25px;
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 25px;
+}
+#show_single_value input{
+	height: 25px;
+	vertical-align: top;
+	margin: 0px;
+	margin-left: 20px;
+	padding: 0;
+}
+/*------设置定时时间------*/
+#set_time_all{
+	/*background-color: red;*/
+	margin-top: 20px;
+}
+#set_time_all h2{
+	/*background-color: yellow;*/
+	padding-bottom: 10px;
+}
+#set_time_all label{
+	margin: 3px 10px;
+}
+#set_time_all select{
+	width: 80px;
+	height: 25px;
+}
+/*------给小明的钱------*/
+#set_money_and_num{
+	/*background-color: red;*/
+	margin-top:20px;
+}
+#set_money_and_num h2{
+	/*background-color: yellow;*/
+	padding-bottom: 10px;
+}
+#set_money_and_num label{
+	margin: 3px 10px;
+}
+#set_money_and_num input{
+	width: 80px;
+	height: 20px;
+}
+#set_money_and_num span:first-child{
+	margin-right:10px; 
+}
+input#last_button{
+	margin: 0px;
+	height: 22px;
+	margin-left: 20px;
+	vertical-align: middle;
+	margin-bottom: 2px;
+}
+/*------显示的表格------*/
+#show_message_all{
+	margin-top: 20px;
+
+}
+#show_message_all table{
+	width: 890px;
+	border-collapse: collapse;
+}
+#show_message_all th{
+	background-color:YellowGreen; 
+}
+#show_message_all td{
+	background-color: Thistle;
+	word-break:break-all;
+}
+th,td{
+	text-align: left;
+	padding-left: 10px;
+	/*width: 140px;*/
+}
+#show_message_all tr th:first-child+th,
+#show_message_all tr th:first-child+th+th+th,
+#show_message_all tr th:first-child+th+th+th+th+th,
+#show_message_all tr th:first-child+th+th+th+th+th+th+th
+{
+	background-color: Violet  ;
+}
+#show_message_all tr td:first-child+td,
+#show_message_all tr td:first-child+td+td+td,
+#show_message_all tr td:first-child+td+td+td+td+td,
+#show_message_all tr td:first-child+td+td+td+td+td+td+td
+{
+	background-color: Silver ;
+}
+
+#show_message_all table input{
+	border: 1px solid black;
+	margin: 2px 0px;
+	background-color: Thistle ;
+	box-shadow: none;
+}
+#show_message_all table input:hover{
+	background-color: Aquamarine ;
+}
+/*------错误提示------*/
+#show_date_err{
+	position: absolute;
+	top: 320px;
+	right: 300px;
+	font-size: 12px;
+	font-family: "翩翩体-简";
+	color: red;
+}
+#show_money_err{
+	position: absolute;
+	left: 100px;
+	top: 380px;
+	left: 600px;
+	font-size: 12px;
+	font-family: "翩翩体-简";
+	color: red;
+}
+
+
+
+
+
+
+

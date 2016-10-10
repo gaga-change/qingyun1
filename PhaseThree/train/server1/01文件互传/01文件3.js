@@ -1,0 +1,3 @@
+var Man=require("./Haha");
+
+

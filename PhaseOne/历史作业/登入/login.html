@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="package/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="package/myAlert.js"></script>
+
+	
+	<title>title</title>
+	<style type="text/css">
+		em{
+			display: block;
+			font-size: 12px;
+			color: red;
+			margin-bottom: 20px;
+		}
+        body{
+            padding-top: 100px;
+            padding-left: 100px;
+        }
+	</style>
+</head>
+<body>
+	<em>用户名为：yan &nbsp&nbsp&nbsp    密码：123456</em>
+
+	用户名：<input type="text" name="name"> 
+	<br><br>
+	密	码：<input type="text" name="pwd">
+	<br><br>
+	<input type="button" value="登入">
+    <br> <br> <br>
+    请输入要查询的用户：<input type="text" name="">
+    <br><br>
+    <input type="button" value="查询">
+    <p></p>
+
+
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	var ajax = function (username,password,show) {
+        // XMLHttpRequest是 JS 进行网络请求的 核心对象
+        var xhr = new XMLHttpRequest();
+        // 通过该request对象去请求服务器接口（服务器接口主要是给各种平台的前端展示提供数据的）
+        xhr.open( 'post', 'http://localhost:8888/login');
+        // data是将要发送给服务器的数据
+        var data = {name:username, pwd:password};
+        // JSON 是内置的json格式转换工具
+        data = JSON.stringify( data );
+        // 设置请求头(类似于信封上的邮寄信息)
+        xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+        // 发送数据到服务器
+        xhr.send( data );
+        xhr.onreadystatechange = function (e) {
+            // console.log("e:"+e);
+            switch (this.readyState) {
+                case this.UNSENT :
+                    console.log('UNSENT'); break;
+                case this.OPEND :
+                    console.log('OPEN');           break;
+                case this.HEADERS_RECEIVED :
+                    console.log('HEADERS_RECEIVED');     break;
+                case this.LOADING :
+                    console.log('LOADING');                       break;
+                case this.DONE :
+                    // console.log('DONE' + e.target.response);
+                    show(e.target.response);
+                                             break;
+            }
+
+        }
+    }
+    var getUserAjax = function (myName,show) {
+        var xhr = new XMLHttpRequest();
+        xhr.open( 'get', "http://localhost:8888/getUser?name="+myName);
+        var data = {name:myName};
+        data = JSON.stringify( data );
+        xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+        xhr.send();
+        xhr.onreadystatechange = function ( e ) {
+            switch (this.readyState) {
+                case this.UNSENT :
+                    console.log('UNSENT'); break;
+                case this.OPEND :
+                    console.log('OPEN');           break;
+                case this.HEADERS_RECEIVED :
+                    console.log('HEADERS_RECEIVED');     break;
+                case this.LOADING :
+                    console.log('LOADING');                       break;
+                case this.DONE :
+                    console.log('DONE' + e.target.response);
+                    show(e.target.response);                         break;
+            }
+
+        }
+    }
+    //登入
+    $(":button").eq(0).click(function(){
+    	ajax($(":text").eq(0).val(),$(":text").eq(1).val(),show);
+    });
+    function show(obj){
+    	console.log(obj);
+    	var temp=JSON.parse(obj);
+    	if(temp.msg=="用户 exist"){
+    		$.myAlert("登入成功！");
+    	}else{
+    		$.myAlert("登入失败！用户名或密码错误。");
+    	}
+    }
+    //查询
+    $(":button").eq(1).click(function(){
+        getUserAjax($(":text").eq(2).val(),show2);
+    });
+    function show2(obj){
+        console.log(obj);
+        var temp=JSON.parse(obj);
+        if (temp.msg!="用户 exist") {
+            $.myAlert("该用户不存在！");
+            return;
+        };
+
+        console.log(temp.data.name);
+        $.myAlert("用户名："+temp.data.name+"爱好："+temp.data.hoby);
+     
+    }
+
+
+});
+</script>
+</html>

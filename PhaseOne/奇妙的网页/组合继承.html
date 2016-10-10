@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>组合继承</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	function Person(name,age){
+		this.name=name;
+		this.age=age;
+	}
+
+	Person.prototype.say=function (){
+		console.log("我叫"+(this.name));
+	}
+
+	function Man(name,age){
+		Person.apply(this,arguments);
+
+	}
+	Man.prototype=new Person(1,1);
+	// Man.prototype=Person.prototype;
+
+	var man1=new Man();
+	var man2=new Man("dong2",14);
+
+	console.log(man1.name); //underfined
+	console.log(man1.name===man2.name); //false
+	console.log(man1.say===man2.say); //true;
+	man2.say();	//我叫dong2 
+
+
+</script>
+</body>
+</html>

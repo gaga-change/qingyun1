@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>伪元素</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+
+
+		p:before{content:"我在前面";color: green;}	/*0 0 0 2*/
+		.a:after{content:"我在后面";color: blue;}	/*0 0 1 1*/
+		p:first-letter{color: blue;font-size: 40px;}  /*0 0 0 2*/
+		p:first-line{color: red;};					  /*0 0 0 2*/	
+		
+		/*.a:before{content:"我在前面";color: green;}
+		.a:after{content:"我在后面";color: blue;}*/
+				
+
+	</style>
+</head>
+<body>
+	<p>w</p>
+	<p class="a">
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww1
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww2
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww3
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww4
+	</p>
+</body>
+</html>

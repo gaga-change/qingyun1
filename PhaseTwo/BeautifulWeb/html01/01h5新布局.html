@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family:"STSong",sans-serif;
+        }
+        body>header,body>nav,body>div.wrapper,body>footer{
+            width: 800px;
+            margin:20px auto;
+        }
+        body>header,body>footer{
+            height: 40px;
+            line-height:40px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        div.wrapper section,div.wrapper aside{
+            height: 400px;
+            padding-top:30px;
+        }
+        div.wrapper{
+            overflow: hidden;
+            background-color: aliceblue;
+        }
+        div.wrapper section{
+            width: 580px;
+            float: left;
+            padding-left:20px;
+        }
+        div.wrapper section p{
+            font-family:"STKaiti",sans-serif;
+            line-height:1.6;
+            text-indent:2em;
+            /*white-space:nowrap;*/
+            word-break:break-all;
+        }
+        div.wrapper aside{
+            width: 159px;
+            height: 360px;
+            margin-top:20px;
+            float:right;
+            padding-left: 20px;
+            border-left: 1px solid chartreuse;
+
+        }
+        div.wrapper h1,div.wrapper h2{
+            padding-bottom:20px;
+        }
+        div.wrapper h3{
+            padding-bottom: 15px;
+        }
+        div.wrapper h4{
+            margin-top: 15px;
+        }
+        div.wrapper aside p{
+            line-height:1.6;
+        }
+        div.wrapper aside a{
+            color: darkcyan;
+            font-size: 13px;
+        }
+        div.wrapper aside a:hover{
+            color: deeppink;
+        }
+        body>nav{
+            overflow: hidden;
+            background-color: beige;
+            border-radius: 5px;
+        }
+        body>nav ul{
+            list-style-type:none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body>nav li{
+            float: left;
+        }
+        body>nav li a{
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            line-height:35px;
+            text-align: center;
+        }
+        body>nav li a:hover{
+            background-color:aquamarine;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h3>这是个头部</h3>
+</header>
+<nav>
+    <ul>
+        <li><a href="">首页</a></li>
+        <li><a href="">HTML5</a></li>
+        <li><a href="">CSS3</a></li>
+    </ul>
+</nav>
+<div class="wrapper">
+    <section>
+        <article>
+            <header>
+                <h2>HTML5的介绍</h2>
+                <h3>HTML的简介</h3>
+            </header>
+            <p>O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~
+                O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~
+                O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~
+                O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~
+                O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~
+            </p>
+            <footer>
+                <h4>这是对HTML5的介绍</h4>
+            </footer>
+        </article>
+    </section>
+
+    <aside>
+        <h1>参考文档</h1>
+        <p><a href="">HTML5教程1</a></p>
+        <p><a href="">HTML5教程2</a></p>
+        <p><a href="">HTML5教程3</a></p>
+    </aside>
+</div>
+<footer>
+    <h3>这个是脚注</h3>
+</footer>
+</body>
+</html>

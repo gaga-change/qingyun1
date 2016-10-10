@@ -1,0 +1,59 @@
+
+.body{
+    width: 100%;
+}
+.body>div,.body>header,.body>footer,.body>nav{
+    /*width:100%;*/
+    width:1000px;
+    margin:10px auto;
+    background-color: AliceBlue;
+}
+#header{
+    height: 55px;
+    line-height: 55px;
+}
+#wrapper{
+    /*height: 500px;*/
+    overflow:hidden;
+}
+section ,aside{
+    height: 900px;
+}
+#wrapper #section{
+    width: 650px ;
+    float: left;
+    background-color: blanchedalmond;
+}
+#wrapper #aside{
+    width: 320px ;
+    float: right;
+    background-color: blanchedalmond;
+}
+
+#footer{
+    height: 55px;
+}
+#nav {
+    overflow: hidden;
+}
+
+#nav ul.left {
+
+}
+
+#nav ul.left li {
+    float: left;
+}
+
+#nav ul.left li a {
+    font-size: 16px;
+    display: inline-block;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+#nav ul.left li a:hover {
+    background-color: aqua;
+    border-radius: 5px;
+
+}

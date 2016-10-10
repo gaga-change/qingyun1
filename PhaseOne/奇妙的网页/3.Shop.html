@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+
+	/*#d1{ width: 300px;height: 300px; border: 1px solid gray;padding: 30px; }*/
+	
+
+	</style>
+	<!-- 导入jQuery源文件，就可以使用了，需要注意一定不要改源码 -->
+	<script type="text/javascript" src="jquery-3.1.0.slim.min.js"></script>
+
+	<script type="text/javascript">
+		'use strict';
+
+		var products = [
+			{category:"生活用品",sales:["肥皂","牙刷"]},
+			{category:"食品",sales:["饼干","香肠"]},
+			{category:"水果",sales:["西瓜","榴莲"]}
+		];
+
+		window.onload = function(){
+
+			for (var i = 0; i < products.length; i++) {
+				 var pLi = "<li class='category'>"+products[i].category+ "<li><ul><li>"+products[i].sales[0]+"</li><li>"+products[i].sales[1]+"</li></ul></li></li>";
+				 // pLi +=
+				 $("#shop").append(pLi);
+			};
+
+			// $("#shop>li:even").append("<input type='checkbox' name='shopSelect'/>");
+			// $("#shop>li:odd li").append("<input type='checkbox' name='shopSelect'/>");
+			$("#shop>li:even").add($("#shop>li:odd li")).append("<input type='checkbox' name='shopSelect'/>");
+
+			// $(":checkbox").click(function(){
+			// 	// alert(this);
+			// 	// $(this).parent().remove();
+			// });
+
+
+		}
+
+
+		function Show(){
+			// alert($(":checkbox:checked").parent().hasClass("category"))
+			//是否为大的
+			var temp=$(":checkbox:checked").parent().hasClass("category");
+			console.log(temp);
+			//是大的把下个兄弟删了
+			if(temp){
+				$(":checkbox:checked").parent().next().remove();
+			}
+			console.log($(":checkbox:checked").parent);
+
+
+			// $(":checkbox:checked").parent().remove();
+		}
+
+
+	</script>
+
+</head>
+<body>
+	
+	<ul id="shop">
+	
+	</ul>
+
+
+	<input type="button" value="Show" onclick="Show()" />
+</body>
+</html>

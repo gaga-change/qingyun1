@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>闭包</title>
+</head>
+<body>
+<script type="text/javascript">
+	"use strict"
+	function oldMan () {
+		var money=20;
+		var things1= (function (money){
+			return function(){
+				console.log("我现在有："+money--);
+				console.log("没了一块："+money);
+			}
+		}(money));
+
+		return things1;
+	}
+	var temp=oldMan();
+	temp();
+</script>
+</body>
+</html>

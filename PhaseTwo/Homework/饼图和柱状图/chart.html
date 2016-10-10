@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/chart.css">
+    <script type="text/javascript" src="package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="package/dong.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <title>自动图标生成器之canvas</title>
+</head>
+<body>
+<div class="body">
+    <header id="header">
+        <h1>自动表格制作</h1>
+    </header>
+    <nav id="nav">
+        <ul class="left">
+            <li><a>饼图</a></li>
+            <li><a>柱状图</a></li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+        <section id="section">
+            <article>
+                <div id="top">
+                    <div id="scroll">
+                        <div class="pie">
+                            <h1>饼图</h1>
+                        </div>
+                        <div class="bar">
+                            <h1>柱状图</h1>
+                        </div>
+                        <!--<canvas class="my_canvas_pie" width="400" height="400"></canvas>-->
+                        <!--<canvas class="my_canvas_bar" width="400" height="400"></canvas>-->
+                    </div>
+                </div>
+            </article>
+        </section>
+        <aside id="aside">
+            <form class="set_msg">
+                <table>
+                    <tr>
+                        <td>项目名</td>
+                        <td><input type="text" title="" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            提示
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>数据</td>
+                        <td><input type="text" title="" name="data"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            提示
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>单位</td>
+                        <td><input type="text" title="" name="unit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            提示
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>颜色</td>
+                        <td><input type="color" title="" name="color"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            提示
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input id="table_add_message" type="submit" value="添加" title="">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <table class="show_msg">
+                <tr>
+                    <th>项目名</th>
+                    <th>数据</th>
+                    <th>单位</th>
+                    <th>颜色</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>项目一</td>
+                    <td>4000</td>
+                    <td>px</td>
+                    <td style="background-color: yellow;"></td>
+                    <td><input onclick="delTr(this)" type="button" value="删除"></td>
+                </tr>
+
+            </table>
+        </aside>
+    </div>
+    <footer id="footer">
+        <p>严俊东</p>
+    </footer>
+</div>
+</body>
+</html>

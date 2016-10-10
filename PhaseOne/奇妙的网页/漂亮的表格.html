@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>爱美的表格</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		table,th,td{
+			border:1px solid gray;
+		}
+		th,td{
+			padding-left: 10px;
+		}
+		/*整个表格*/
+		#my_table{                                                                                                                                
+			width: 500px;
+			height: 200px;
+			margin-top: 20px;
+			margin-left: 20px;
+			background-color: Aliceblue;
+			text-align: left;
+			vertical-align: middle;
+			padding: 0;
+			border-collapse: collapse;
+			/*outline: 2px  dotted   red;*/
+		}
+		/*第一个行*/
+		#my_table tr:first-child{
+			background-color: DeepPink;
+
+		}
+		/*内容中变色的行*/
+		#my_table .gaga{
+			background-color: AntiqueWhite;
+		}
+	</style>
+</head>
+<body>
+	<table id="my_table">
+		<tr>
+			<th>Company</th>
+			<th>Contact</th>
+			<th>Country</th>
+		</tr>
+		<tr>
+			<td>Apple</td>
+			<td>Steven Jobs</td>
+			<td>USA</td>
+		</tr>
+		<tr class="gaga">
+			<td>Baidu</td>
+			<td>Li YanHong</td>
+			<td>China</td>
+		</tr>
+		<tr>
+			<td>Google</td>
+			<td>Larry Page</td>
+			<td>USA</td>
+		</tr>
+		<tr class="gaga">
+			<td>Lenovo</td>
+			<td>Liu Chuanzhi</td>
+			<td>China</td>
+		</tr>
+		<tr>
+			<td>Microsoft</td>
+			<td>Bill Gates</td>
+			<td>USA</td>
+		</tr>
+		<tr class="gaga">
+			<td>Nokia</td>
+			<td>Stephen Elop</td>
+			<td>Finland</td>
+		</tr>
+	</table>
+</body>
+</html>

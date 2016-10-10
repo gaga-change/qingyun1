@@ -1,0 +1,126 @@
+#header,#wrapper,#footer{
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*------头部------*/
+#header{
+	height: 60px;
+	padding-top: 40px;
+	margin-top: 20px;
+	/*background-color: Seagreen ;*/
+}
+/*------内容部------*/
+#wrapper{
+	/*height: 100px;*/
+	/*background-color: Aliceblue ;*/
+}
+/*------内容-左-注册部分------*/
+#wrapper .left_all{
+	 width: 400px;
+	 height: 100%;
+	 float: left;
+	 /*background-color: Deeppink;*/
+}
+/*6条注册信息*/
+.left_all .top_login{
+	/*background-color: yellow;*/
+}
+.top_login span:first-child{
+	width: 80px;
+	padding: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	text-align: right;
+}
+.top_login input[type="text"],.top_login input[type="password"]{
+	width: 150px;
+	height: 20px;
+	border-radius: 5px;
+}
+#wrapper .verification input{
+	width: 70px;
+	/*height: */
+}
+.top_login input+span{
+	padding-left: 10px;
+	font-size: 12px;
+	color: red;
+	background-image: url(../img/tips_arrow.gif);
+	background-repeat: no-repeat;
+
+}
+/*注册提交按钮*/
+.left_all .bottom_submit{
+	padding-top:20px; 
+	text-align: center;
+	/*background-color: red;*/
+}
+#wrapper .bottom_submit p{
+	text-align: left;
+	margin-top: 20px;
+	padding-left: 114px;
+}
+.bottom_submit p input{
+	width: 70px;
+	height: 30px;
+	margin-right: 5px;
+	/*background-color: yellow;*/
+	background-color: aqua;
+	/*color: red;*/
+	/*display: block;*/
+}
+/*------内容-右-两个超链接------*/
+#wrapper .right_a{
+	float: right;
+	/*background-color: red;*/
+}
+
+/*------内容-底-注册信息------*/
+#wrapper .bottom_table{
+	padding-top: 40px;
+	width: 950px;
+	height: 400px;
+	clear: both;
+	/*background-color: Azure;*/
+}
+.bottom_table table{
+	/*width: 950px;*/
+	width: 910px;
+	margin-left: 20px;
+	border-collapse: collapse;
+}
+.bottom_table  th{
+	background-color:YellowGreen; 
+}
+.bottom_table  td{
+	background-color: Thistle;
+}
+.bottom_table th,.bottom_table td{
+	/*width: 120px;*/
+	text-align: left;
+	padding-left: 10px;
+	/*word-wrap:break-word; */
+	word-break:break-all;
+	overflow:hidden;
+	
+}
+.bottom_table  tr th:first-child+th,
+.bottom_table  tr th:first-child+th+th+th,
+.bottom_table  tr th:first-child+th+th+th+th+th
+{
+	background-color: Violet  ;
+}
+.bottom_table  tr td:first-child+td,
+.bottom_table  tr td:first-child+td+td+td,
+.bottom_table  tr td:first-child+td+td+td+td+td
+{
+	background-color: Silver ;
+}
+
+
+/*------尾部------*/
+#footer{
+	height: 100px;
+	background-color: aqua;
+}

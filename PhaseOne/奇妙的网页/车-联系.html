@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>车</title>
+</head>
+<body>
+<script type="text/javascript">
+	function Car(){
+		this.talk=function(){
+			console.log("我是Car");
+		}
+	}
+	function MG(){
+		this.talk=function(){
+			MG.prototype.talk();
+			console.log("我是MG");
+		}
+	}
+	function Chevy(){
+		this.talk=function(){
+			this.constructor.prototype.talk();
+			console.log("我是Chevy");
+		}
+	}
+
+	var car =new Car();
+
+	MG.prototype=Object.create(car);
+	MG.prototype.constructor=MG;
+	var mg=new MG();
+	
+	Chevy.prototype=Object.create(mg);
+	Chevy.prototype.constructor=Chevy;
+	var myChevy=new Chevy();
+	
+	myChevy.talk();	
+
+
+
+</script>
+</body>
+</html>

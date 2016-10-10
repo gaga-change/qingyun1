@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>如何暂停世界</title>
+</head>
+<body>
+<input type="button" onclick="myClear()" value="暂停">
+<input type="button" onclick="mySet1()" value="开">
+<input type="button" onclick="mySet2()" value="按钮">
+<script type="text/javascript">
+	// var timeMark=true;
+
+
+	// console.log("开始");
+	// var t=setTimeout(function() {
+	// 	if(timeMark)
+	// 		console.log("a");
+	// },3000);
+	// function myClear(){
+	// 	console.log("我摁了暂停了啊");
+	// 	// clearTimeout(t); 
+	// 	// timeMark=false;
+	// }
+	// function mySet1(){
+	// 	console.log("开");
+	// 	t=setTimeout(function() {
+	// 		if(timeMark)
+	// 			console.log("a");
+	// 	},3000);
+	// }
+
+
+	var t;
+
+
+	console.log("开始");
+	// t=setTimeout(function() {
+		
+	// 		console.log("a");
+	// },3000);
+	function myClear(){
+		console.log("我摁了暂停了啊");
+		clearTimeout(t); 
+		clearTimeout(t); 
+	}
+	function mySet1(){
+		console.log("开");
+		t=setTimeout(function() {
+			console.log("跳：a");
+		},3000);
+	}
+
+</script>
+</body>
+</html>

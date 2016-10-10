@@ -1,0 +1,18 @@
+
+body{background-color: rgb(163,196,92);font-family: "娃娃体-简";font-size: 20px;}
+
+td{color:red;font-size: 20px;background-color: AliceBlue; text-align: center;}
+th{color:orange;font-size: 40px;background-color:AntiqueWhite;}
+/*表格标题*/
+#title_id{color:red;font-size:50px;}
+
+/*讲台两边的位置*/
+.bc_beige_class{background-color:Beige};
+a{}
+a:link{text-decoration: none;color: red;}
+a:visited{text-decoration: none;color: red;}
+a:hover{text-decoration: none;color: red;font-size: 40px;}
+a:active{text-decoration: none;color: red;}
+
+
+

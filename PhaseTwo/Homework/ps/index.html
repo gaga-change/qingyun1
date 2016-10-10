@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="package/bootstrap/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="css/common.css">-->
+    <!--<link rel="stylesheet" href="css/frame.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--<script type="text/javascript" src="js/data.js"></script>-->
+    <script type="text/javascript" src="package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="package/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="package/dong.js"></script>-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>一个网页</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="row">
+            <div class="col-xs-3">
+                <h1><img src="img/logo.png" alt="" style="vertical-align:top"> CROWDME</h1>
+            </div>
+            <div class="col-xs-7">
+                <ul class="nav nav-pills">
+                    <li><a href="#">
+                        <small>home</small>
+                    </a></li>
+                    <li><a href="#">
+                        <small>how it works</small>
+                    </a></li>
+                    <li><a href="#">
+                        <small>discover a project</small>
+                    </a></li>
+                    <li><a href="#">
+                        <small>blog</small>
+                    </a></li>
+                    <li><a href="#">
+                        <small>find out more</small>
+                    </a></li>
+
+                </ul>
+            </div>
+            <div class="col-xs-2">
+                <button class="btn btn-info">LOGIN</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <img src="img/mag_02.jpg" alt="">
+            <button class="btn btn-info btn-lg">Become a Member</button>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <!--带球的  01-->
+        <div class="row text-center">
+            <img src="img/ball.jpg" alt="">
+            <div style="text-transform: uppercase">
+                <h1>our work is the presentation<br> of our capablilities.</h1>
+            </div>
+            <p>
+                <small>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor incididunt ut
+                    labore et
+                    dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation
+                </small>
+            </p>
+            <p>
+                <small>Ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in
+                    vo-
+                    luptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </small>
+            </p>
+        </div>
+        <!--标签式菜单  02-->
+        <div class="row ">
+            <div class="center-block">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#one" data-toggle="tab"><div class="one" style="background-color: #56df39">1</div>Simple</a></li>
+                    <li><a href="#two" data-toggle="tab"><div class="two">2</div>Transparent</a></li>
+                    <li><a href="#three" data-toggle="tab"><div class="three">3</div>Collaborative</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div id="one" class="tab-pane fade in active"  style="padding-top: 30px;">
+                        <img class="pull-left" style="padding: 60px 100px" src="img/glass.png" alt="">
+
+                        <h2 style="color: #aed139">Browse projects,like booking a hotel online!</h2>
+                        <p>
+                            <small>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor
+                                incididunt ut labore et do lore magna aliqua.Ut enim ad minim veniam,quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </small>
+                        </p>
+                    </div>
+                    <div id="two" class="tab-pane fade" style="padding-top: 30px;">
+                        <img class="pull-left" style="padding: 30px 100px" src="img/haha.gif" alt="">
+
+                        <h2 style="color: #aed139">gaga</h2>
+                        <p>
+                            <small>yanjundong
+                            </small>
+                        </p>
+                    </div>
+                    <div id="three" class="tab-pane fade" style="padding-top: 30px;">
+                        <img class="pull-left" style="padding: 60px 100px" src="img/glass.png" alt="">
+
+                        <h2 style="color: #aed139">gaga</h2>
+                        <p>
+                            <small>lalalaala
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--一个钱包一个沙发 03-->
+        <div class="row all_screen">
+            <div class="col-xs-6" style="padding-left: 200px">
+                <img src="img/sofa.png" alt="">
+                <div class="pull-right">
+                    <h3>Find Properties</h3>
+                    <p>Sign up to browse the portfolio.
+                        <br>Your journey to becoming areal
+                        <br>estate baron starts here.
+                    </p>
+                    <button class="btn btn-info btn-lg">Become A Member</button>
+                </div>
+            </div>
+            <div class="col-xs-6" style="padding-left: 200px">
+                <img src="img/purse.png" alt="">
+                <div class="pull-right">
+                    <h3>Find Buyers</h3>
+                    <p>Sign up to browse the portfolio.
+                        <br>Your journey to becoming areal
+                        <br>estate baron starts here.
+                    </p>
+                    <button class="btn btn-info btn-lg">Submit Your Project</button>
+                </div>
+            </div>
+        </div>
+        <!--一段文字-->
+        <div class="row">
+            <h2>Featured Projects</h2>
+            <p>Brief details of new and popular project. Toview full listings,you will be required to
+                <br>sign up and become a member.
+            </p>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <img src="img/else.jpg" alt="">
+        </div>
+        <div class="row"><img src="img/footer.jpg" alt=""></div>
+        <!--<div class="row">-->
+        <!--<pre>Copyright© 2001 - 2014 Cssauthor.com</pre>-->
+        <!--</div>-->
+    </footer>
+</div>
+</body>
+</html>

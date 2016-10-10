@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>继承</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+
+	// ------apply------
+
+	// function Product(price,brand){
+	// 	this.price=price;
+	// 	this.brand=brand;
+	// 	this.show="   爸爸:产品源自生活!"
+	// }
+	// function Car(price,barnd,color){
+	// 	Product.apply(this,arguments);
+	// 	this.show="我才是我";
+	// 	this.color=color;
+	// }
+	// var temp=new Product();
+	// temp.show="  哈哈";
+	// console.log("temp:"+temp.show);
+	// console.log("car:"+(new Car()).show);
+
+	// ------prototype------
+
+	// function Product(price,brand){
+	// 	this.price=price;
+	// 	this.brand=brand;
+	// 	this.show="   爸爸:产品源自生活!"
+	// }
+	// function Car(color){
+	// 	this.color=color;
+	// }
+	// var temp=new Product(1,1);
+	// temp.show="temp:我才是你爸爸";
+	// Car.prototype=temp;
+
+	// var myCar=new Car();
+	// console.log("myCar:"+myCar.show);
+
+
+	// ------create-------
+	// function Product(price,brand){
+	// 	this.price=price;
+	// 	this.brand=brand;
+	// 	this.show="   爸爸:产品源自生活!"
+	// }
+	// function Car(color){
+	// 	this.color=color;
+	// }
+	
+	// var temp=new Product(1,1);
+	// temp.show="temp:我才是你爸爸";
+	// 	var temp2=new Product(1,1);
+	// 	temp2.show="temp2:我才是你爸爸";
+
+
+	// 	Car.prototype=temp2;
+	// var myCar=new Car();
+	// 	console.log("myCar:"+myCar.show);
+	// myCar=Object.create(temp);
+
+	// console.log("myCar:"+myCar.show);
+
+
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="package/jquery-3.1.0.min.js"></script>
+    <title>切换</title>
+    <style type="text/css">
+        #gaga {
+            width: 100px;
+            height: 200px;
+            /*background-color: yellow;*/
+            position: relative;
+            overflow: hidden;
+        }
+
+        #wrapper {
+            height: 100px;
+            width: 300px;
+            /*padding: 5px;*/
+            /*background-color: red;*/
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #wrapper > div {
+            height: 100%;
+            width: 100px;
+            float: left;
+        }
+
+        #wrapper > div:first-child {
+
+            background-color: aqua;
+        }
+
+        #wrapper > div:first-child + div {
+            background-color: yellowgreen;
+            /*display: none;*/
+        }
+
+        #wrapper > div:first-child + div + div {
+            background-color: darkmagenta;
+            /*display:none;*/
+        }
+    </style>
+</head>
+<body>
+<input id="but1" title="0" type="button">
+<input id="but2" title="1" type="button">
+<input id="but3" title="2" type="button">
+<div id="gaga">
+    <div id="wrapper">
+        <div id="a">a</div>
+        <div id="b">b</div>
+        <div id="c">c</div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $("#but1,#but2,#but3").click(function (event) {
+        var num = event.target.title;
+        var wrap = $("#wrapper");
+        console.log();
+        wrap.animate({left: -num * 100 + "px"}, "slow");
+    });
+</script>
+</html>

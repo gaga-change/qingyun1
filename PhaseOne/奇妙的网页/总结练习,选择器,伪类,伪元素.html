@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>总结练习7.8</title>
+	<style type="text/css">
+		body{font-family: "STKaiti";}
+		div{border: 2px solid white;}
+		/*----------属性选择器---------------*/
+		/*[title~=a]{border-color: red;}*/
+		/*[title=a]{border-color:yellow;}*/
+		/*[title|=a]{border-color: red;}
+		[title|="/a/b"]{border-color: green;}*/
+		/*[title^="a"]{border-color: red;}*/
+		/*[title$="b"]{border-color: red;}*/
+		/*[title*="-"]{border-color:red;}*/
+		/*div[title][class]{border-color: red;}*/
+
+		/*---------------伪类----------------*/
+		/*a:link{color: red;};
+		a:visited{color:green;}
+		a:hover{color: white;}
+		a:active{color: yellow;}*/
+		/*input:focus{background-color: red;}*/
+         /*div:first-child{color: red;}*/
+		/*div>div:first-child{color: green;}*/
+		/*div:first-child div{color: green;}*/
+		/*q:lang(no){quotes: "~" "~"}*/
+
+		/*----------------伪元素------------------*/
+		/*1.after
+		2.first
+		3.first-letter
+		4.first-line*/
+		p:after{content: "-after"}
+		p:before{content: "first-"}
+		p:first-letter{color: red;font-size: 40px;}
+		p:first-line{color: green;}
+
+	</style>
+</head>
+<body>
+	<q lang="no">gagachange</q><hr>
+	<p style="color:DeepPink">	
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+	</p>
+	<p >
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww1
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww2
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww3
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww4
+		wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww4
+		AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa5
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6
+	</p>
+	<hr>
+	<div title="a-b">
+		<div>
+			div2
+		</div>
+		<div class="dd">
+			div22
+		</div>
+	</div>
+	<div title="a-b">
+		<div>
+			div3
+		</div>
+		<div class="dd">
+			div33
+		</div>
+	</div>
+	<div>div-1</div>
+	<p>p2</p>
+	<div><p>p1</p></div>
+	
+	<h1><a href="#bottom">属性选择器</a></h1>
+	<div title=" a b" class="div1" >
+		div1
+	</div>
+	
+	<div title="/a/b-a.jsp">div3</div>
+	<div title="a">div4</div>
+	<div title="ab">div5</div>
+	<input type="text" />
+</body>
+</html>

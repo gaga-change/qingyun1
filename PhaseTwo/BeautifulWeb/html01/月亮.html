@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>月亮</title>
+    <style type="text/css">
+        svg {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<svg id="my_canvas" width="800" height="800">
+    <!--<path d="M200 100-->
+    <!--Q  300,200 200,300-->
+    <!--" style="stroke: green;stroke-width: 2;fill: none"  />-->
+    <!--<circle cx="200" cy="200" r="100" style="stroke: green;stroke-width: 2;fill: none" ></circle>-->
+    <!--&lt;!&ndash;d="M306 197L332.8699 223.8699A38 38 0 0 1 277.8424 222.5178Z"&ndash;&gt;-->
+    <!--<path d="M200 100A100 100 0 0 1 200.8424 200.5178Z"-->
+    <!--fill="#000000" stroke="#000000" transform="matrix(1,0,0,1,-28,96)" />-->
+
+    <g id="moon">
+        <defs>
+            <mask id="mask-moon">
+                <circle r="100" cx="600" cy="250" fill="white"/>
+                <circle r="100" cx="550" cy="290" fill="black"/>
+            </mask>
+        </defs>
+        <circle r="100" cx="600" cy="250" fill="yellow" mask="url(#mask-moon)"/>
+    </g>
+    <g id="star-group"></g>
+    <defs>
+        <polygon id="star" points="0 -10 2 -2 10 0 2 2 0 10 -2 2 -10 0 -2 -2" fill="white"/>
+    </defs>
+</svg>
+</body>
+<script>
+    var SVG_NS = 'http://www.w3.org/2000/svg';
+    var XLINK_NS = 'http://www.w3.org/1999/xlink';
+    var starCount = 100;
+    renderStar();
+    function renderStar() {
+        var starRef = document.querySelector('#star');
+        var starGroup = document.querySelector('#star-group');
+        while (starCount--) {
+            console.log("f")
+            star = use(starRef);
+            star.setAttribute('transform', 'translate(' +random(0,200)  + ',' + random(200,0) + ')' + 'scale(' + random(0.1, 0.8) + ')');
+            star.setAttribute('opacity', random(0.1, 0.7))
+            starGroup.appendChild(star)
+        }
+    }
+    function use(origon) {
+        var _use = document.createElementNS(SVG_NS, 'use');
+        _use.setAttributeNS(XLINK_NS, 'xlink:href', '#' + origon.id);
+        return _use;
+    }
+    //大小数之间的随机
+    function random(min, max) {
+        return min + (max - min) * Math.random();
+    }
+    //    var SVG_NS='http://www.w3.org/2000/svg';
+    //    var XLINK_NS='http://www.w3.org/1999/xlink';
+    //    var paper=document.querySelector('svg');
+    //    var starCount=500;
+    //    var width=document.body.clientWidth;
+    //    var height=document.body.clientHeight;
+    //    var star;
+    //    renderStar()
+    //    setSVGViewBox()
+    //    //绘制星星
+    //    function renderStar() {
+    //        var starRef=document.querySelector('#star');
+    //        var starGroup=document.querySelector('#star-group');
+    //        while (starCount--) {
+    //            star=use(starRef);
+    //            star.setAttribute('transform','translate('+random(-width/2,width/2)+','+random(-height/2,height/2)+')'+'scale('+random(0.1,0.8)+')');
+    //            star.setAttribute('opacity',random(0.1,0.7))
+    //            starGroup.appendChild(star)
+    //        }
+    //    }
+    //    //JS加载use方法
+    //    function use(origon){
+    //        var _use=document.createElementNS(SVG_NS,'use');
+    //        _use.setAttributeNS(XLINK_NS,'xlink:href','#'+origon.id)
+    //        return _use
+    //    } //大小数之间的随机
+    //    function random(min,max){
+    //        return min+(max-min)*Math.random();
+    //    }
+    //    //设置svg的宽高
+    //    function setSVGViewBox(){
+    //        paper.setAttribute('viewBox',-width/2+' '+(-height/2)+' '+width+' '+height )
+    //        console.log(paper.getAttribute('viewBox'));
+    //    }
+
+</script>
+</html>

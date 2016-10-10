@@ -1,0 +1,271 @@
+#set_background{
+	width: 1187px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+}
+
+#header,#wrapper,#meauer,#footer{
+	width: 960px;
+	margin-left: auto;
+	margin-right:auto;
+}
+/*------头部------*/
+#header{
+	position: relative;
+}
+#header .top{
+	height: 26px;
+	/*background-color: yellow;*/
+	line-height: 26px;
+}
+#header .top ul{
+	font-size: 13px;
+}
+#header .top ul >li{
+	
+}
+#header .top ul >li:first-child>a{
+	border-left:none;
+}
+#header .top ul >li>a{
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: 2px solid black;
+}
+#header .top ul >li>a:hover{
+	color: aqua;
+}
+
+#header .log{
+	height: 95px;
+	/*background-color: green;*/
+	padding-top: 20px;
+	color: white;
+}
+#header .log h1{
+	padding-left: 20px;
+
+}
+#header .log h4{
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+#free_bg{
+	position: absolute;
+	right: 10px;
+	top:20px;
+}
+/*------菜单------*/
+#meauer{
+
+}
+#meauer .menu{
+	height: 30px;
+	/*background-color: yellow;*/
+	background-image: url(../img/menu_bg.gif);
+	
+}
+#meauer .menu ul{
+	padding-left: 20px;
+	/*background-color: AliceBlue;*/
+	font-size: 15px;
+}
+#meauer .menu ul>li{
+	
+}
+#meauer .menu ul>li>a{
+	display: inline-block;
+	padding: 4px 10px;
+	color: white;
+}
+#meauer .menu ul>li>a:hover{
+	background-color: aqua;
+	color: black;
+}
+
+#meauer .show_img{
+	height: 200px;
+	/*background-color: green;*/
+	background-image: url("../img/banner.jpg");
+	
+}
+/*------内容------*/
+#wrapper {
+	margin-top: 20px;
+	overflow: hidden;
+}
+/*------左*/
+#wrapper .left {
+	width: 200px;
+	/*height: 900px;*/
+	float: left;
+	/*background-color: yellow*/
+}
+/*五个个标题*/
+#wrapper  h3{
+	padding-left: 10px;
+	line-height: 30px;
+	height: 28px;
+	font-size: 15px;
+	background-image: url(../img/side_head.gif);
+	background-repeat: repeat-x; 
+	font-family: "翩翩体-简";	
+}
+/*两个暂无链接*/
+#wrapper .left .no_class>ul>li{
+	padding-left: 10px;
+	background-image: url(../img/ico_arrow.gif);
+	background-position: 0 10px;
+	background-repeat: no-repeat;
+
+}
+#wrapper .left .classify,#wrapper .left .search,#wrapper .left .firend_link{
+	margin-bottom: 20px;
+	border: 1px solid gray;
+	background-color: white;
+}
+#wrapper .left ul{
+	margin: 10px 10px;
+	line-height: 30px;
+}
+#wrapper .left ul>li{
+	float: none;
+
+
+}
+#wrapper .left ul>li input:first-child {
+	display: inline-block;
+	padding: 3px 0px 3px 10px;
+	border: 1px solid green;
+	width: 100px;
+	font-size: 12px;
+	color: gray;
+
+}
+#wrapper .left ul>li select{
+	margin-top: 15px;
+	height: 25px;
+}
+
+#wrapper .left ul>li select+input {
+	/*display: inline-block;*/
+	line-height: 100%;
+	padding: 3px 5px;
+	border: 1px solid green;
+	/*width: px;*/
+	font-size: 12px;
+	border-radius: 3px;
+	margin-left: 10px;
+	/*color: gray;*/
+}
+#wrapper .left ul>li select+input:hover{
+	background-color: aqua;
+	color: black;
+}
+#wrapper .left .classify{
+
+}
+#wrapper .left .search{
+
+}
+#wrapper .left .firend_link{
+
+}
+
+/*------右*/
+#wrapper .right {
+	width: 750px;
+	/*height: 900px;*/
+	float: right;
+	/*background-color: green;*/
+}
+
+#wrapper .right .connection,#wrapper .right .message{
+	line-height: 30px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+#wrapper .right p{
+	margin-left: 20px;
+}
+#wrapper .right p>span:first-child {
+	display: inline-block;
+	width: 80px;
+	/*background-color: red;*/
+	margin-right: 40px;
+	direction: rtl;
+}
+#wrapper .right p em {
+	color: red;
+}
+/*联系方式*/
+#wrapper .right .connection a:hover{
+	color: red;
+
+}
+/*在线留言*/
+#wrapper .right .message{
+	line-height: 40px;
+}
+#wrapper .right .message input[type="text"]{
+	height: 20px;
+	width: 200px;
+	border: 1px solid green;
+}
+#wrapper  input[type="text"]#yan{
+	width: 100px;
+	color: gray;
+	font-size: 12px;
+	text-align: center;
+}
+#wrapper .right .message textarea{
+	vertical-align: middle;	
+}
+#wrapper .right .message input[type="button"],#wrapper .right .message input[type="reset"]{
+	margin-right: 10px;
+	font-size: 14px;
+	padding: 3px 5px;
+	background-color: AliceBlue;
+	border-radius: 3px;
+	border:1px solid #c3c8cd; 
+	box-shadow: 0 2px 3px #ccc;
+}
+#wrapper .right .message input[type="button"]:hover,#wrapper .right .message input[type="reset"]:hover{
+	background-color: aqua;
+	color: black;
+
+}
+
+
+/*------页脚------*/
+#footer{
+	text-align: center;
+	border-top: 1px dotted gray;
+	height: 60px;
+	margin-top: 20px;
+	font-family: "STKaiti";
+	font-size:12px;
+	/*background-color: black;*/
+}
+
+/*-------------广告-------------*/
+#advertisement{
+	text-align: center;
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+
+}
+
+
+
+
+
+
+
+
+

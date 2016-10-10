@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="package/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/哈哈.css">
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="package/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="package/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="package/dong.js"></script>
+    <script type="text/javascript" src="js/哈哈.js"></script>
+    <title>在这里写名字</title>
+</head>
+<style>
+    .m-item{
+        width: 160px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+
+    }
+    .m-item:hover .info{
+        top: 0;
+        background-color: rgba(128,128,128,0.8);
+        color: white;
+    }
+    .m-item img{
+
+    }
+    .m-item .info{
+        position: absolute;
+        top:75px;
+        left:0;
+        padding: 6px;
+        height: 100px;
+        overflow: hidden;
+        color: white;
+        transition:top 1s,background 1s ;
+    }
+    .m-item .t{
+        height: 44px;
+        /*padding-top: 6px;*/
+
+    }
+    .m-item .up,.m-item .play{
+        margin: 4px;
+        color: #d2d2d2;
+    }
+
+</style>
+<body>
+<ul>
+
+</ul>
+<div class="m-item">
+    <a href="#">
+        <img src="img/temp1.jpg" alt="" width="160px">
+        <div class="info">
+            <div class="t">【未来日记MMD】Mad Hatter【我妻由乃】</div>
+            <p class="up">up主：AkaNxK35</p>
+            <p class="play">播放：82847</p>
+        </div>
+    </a>
+</div>
+
+<script>
+    $("ul").text("gfadsf")
+
+    $(document).ready(function () {
+
+
+        var temp = getData()[0];
+        for (var i = 0; i < 8; i++) {
+            var str = new String();
+            str += "<div class='m-item'>";
+            str += "<a href=" + temp.mUrl + ">";
+            str += "<img src=" + temp.iUrl + " alt='' width='160px'>";
+            str += "<div class='info'>";
+            str += "<div class='t'>" + temp.title + "</div>";
+            str += "<p class='up'>up主：" + temp.up + "</p>"
+            str += "<p class='play'>播放：" + temp.playNum + "</p></div></a></div>"
+            var li = new $("<li></li>");
+            li.html(str);
+            console.log(li)
+            console.log($("body"))
+            $("body").append(li);
+            $("body").append(li);
+            $("body").append(li);
+        }
+    })
+
+
+
+
+
+    function mItem(mUrl,iUrl,title,up,playNum) {
+        this.mUrl=mUrl;
+        this.iUrl=iUrl;
+        this.title=title;
+        this.playNum=playNum;
+    }
+    function getData() {
+        return [new mItem("#","img/temp1.jpg","【未来日记MMD】Mad Hatter【我妻由乃】","AkaNxK35","82847")];
+    }
+
+</script>
+</body>
+</html>

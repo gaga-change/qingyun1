@@ -1,0 +1,65 @@
+<html>
+<head>
+<style type="text/css">
+p:first-child
+{
+width:30px;
+background-color:yellow;
+white-space:normal;
+}
+p:first-child +p
+{
+width:30px;
+background-color:yellow;
+white-space:pre;
+}
+p:first-child+p+p
+{
+width:30px;
+background-color:yellow;
+white-space:wrap;
+}
+p:first-child+p+p+p
+{
+width:30px;
+background-color:yellow;
+white-space:pre-wrap;
+}
+p:first-child+p+p+p+p
+{
+width:30px;
+background-color:yellow;
+white-space:pre-line;
+}
+p:first-child+p+p+p+p+p
+{
+width:30px;
+background-color:yellow;
+white-space:pre-line;
+}
+</style>
+</head>
+<body>
+	<hr>
+	<div>
+		<p>
+			aaaaaaaa  aaaaaaaaaaa   normal
+		</p>
+		<p>
+			aaaaaaaa  aaaaaaaaaaa   pre 
+				if(fads ){
+			}
+		</p>
+		<p>
+			aaaaaaaa  aaaaaaaaaaa   wrap
+		</p>
+		<p>
+			aaaaaaaa  aaaaaaaaaaa   pre-wrap
+		</p>
+		<p>
+			aaaaaaaa  aaaaaaaaaaa   pre-line
+		</p>
+	</div>
+
+</body>
+</html>
